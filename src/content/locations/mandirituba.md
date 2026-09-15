@@ -1,7 +1,7 @@
 ---
 title: Desentupidora em Mandirituba
 slug: mandirituba
-seoTitle: Desentupidora em Mandirituba 24h | Desentupidora Central
+seoTitle: Desentupidora em Mandirituba 24h
 metaDescription: Desentupidora em Mandirituba e região. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: cidade
 population: 28761

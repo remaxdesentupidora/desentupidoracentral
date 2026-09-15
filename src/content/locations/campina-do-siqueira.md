@@ -1,7 +1,7 @@
 ---
 title: Desentupidora na Campina do Siqueira - Curitiba
 slug: campina-do-siqueira
-seoTitle: Desentupidora na Campina do Siqueira Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora na Campina do Siqueira Curitiba 24h
 metaDescription: Desentupidora na Campina do Siqueira, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

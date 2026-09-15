@@ -1,7 +1,7 @@
 ---
 title: Desentupimento de Pia em Curitiba
 slug: desentupimento-de-pia
-seoTitle: Desentupimento de Pia Curitiba 24h | Desentupidora Central
+seoTitle: Desentupimento de Pia Curitiba 24h
 metaDescription: Desentupimento de pia em Curitiba. Serviço ágil e eficiente, garantindo o fluxo adequado de água. Atendimento 24h.
 serviceType: Desentupimento de Pia
 excerpt: As pias entupidas podem ser um verdadeiro incômodo.

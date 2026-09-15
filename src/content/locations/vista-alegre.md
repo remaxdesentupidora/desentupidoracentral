@@ -1,7 +1,7 @@
 ---
 title: Desentupidora na Vista Alegre - Curitiba
 slug: vista-alegre
-seoTitle: Desentupidora na Vista Alegre Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora na Vista Alegre Curitiba 24h
 metaDescription: Desentupidora na Vista Alegre, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

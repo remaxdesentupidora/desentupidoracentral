@@ -1,7 +1,7 @@
 ---
 title: Desentupidora no Cristo Rei - Curitiba
 slug: cristo-rei
-seoTitle: Desentupidora no Cristo Rei Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora no Cristo Rei Curitiba 24h
 metaDescription: Desentupidora no Cristo Rei, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

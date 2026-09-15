@@ -1,7 +1,7 @@
 ---
 title: Desentupidora no Cabral - Curitiba
 slug: cabral
-seoTitle: Desentupidora no Cabral Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora no Cabral Curitiba 24h
 metaDescription: Desentupidora no Cabral, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

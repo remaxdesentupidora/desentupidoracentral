@@ -1,7 +1,7 @@
 ---
 title: Desentupidora na Augusta - Curitiba
 slug: augusta
-seoTitle: Desentupidora na Augusta Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora na Augusta Curitiba 24h
 metaDescription: Desentupidora na Augusta, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

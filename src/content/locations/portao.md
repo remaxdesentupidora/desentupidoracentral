@@ -1,7 +1,7 @@
 ---
 title: Desentupidora no Portão - Curitiba
 slug: portao
-seoTitle: Desentupidora no Portão Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora no Portão Curitiba 24h
 metaDescription: Desentupidora no Portão, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

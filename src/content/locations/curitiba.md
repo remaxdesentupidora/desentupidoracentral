@@ -1,7 +1,7 @@
 ---
 title: Desentupidora em Curitiba
 slug: curitiba
-seoTitle: Desentupidora em Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora em Curitiba 24h
 metaDescription: Desentupidora Central em Curitiba. Ralo, pia, esgoto, caixa de gordura, vaso sanitário e hidrojateamento. Chegamos em até 30 minutos.
 locationType: cidade
 population: 1829225

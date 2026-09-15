@@ -1,7 +1,7 @@
 ---
 title: Desentupidora em Quitandinha
 slug: quitandinha
-seoTitle: Desentupidora em Quitandinha 24h | Desentupidora Central
+seoTitle: Desentupidora em Quitandinha 24h
 metaDescription: Desentupidora em Quitandinha e região. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: cidade
 population: 18823

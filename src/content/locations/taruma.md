@@ -1,7 +1,7 @@
 ---
 title: Desentupidora no Tarumã - Curitiba
 slug: taruma
-seoTitle: Desentupidora no Tarumã Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora no Tarumã Curitiba 24h
 metaDescription: Desentupidora no Tarumã, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

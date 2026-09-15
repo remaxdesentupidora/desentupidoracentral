@@ -1,7 +1,7 @@
 ---
 title: Posso Jogar Produto Químico na Pia Entupida?
 slug: produto-quimico-pia-entupida
-seoTitle: "Produto Químico na Pia Entupida: Riscos | Desentupidora Central"
+seoTitle: "Produto Químico na Pia Entupida: Riscos"
 metaDescription: Entenda quando usar produto químico desentupidor é seguro e quando ele pode piorar o problema da sua pia.
 ogImage: /uploads/og-artigo-exemplo.jpg
 excerpt: Produto químico desentupidor pode ajudar em casos simples, mas usado do jeito errado pode piorar o problema. Veja quando evitar.

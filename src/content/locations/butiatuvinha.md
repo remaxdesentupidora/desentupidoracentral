@@ -1,7 +1,7 @@
 ---
 title: Desentupidora no Butiatuvinha - Curitiba
 slug: butiatuvinha
-seoTitle: Desentupidora no Butiatuvinha Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora no Butiatuvinha Curitiba 24h
 metaDescription: Desentupidora no Butiatuvinha, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

@@ -1,7 +1,7 @@
 ---
 title: Desentupidora no Tingui - Curitiba
 slug: tingui
-seoTitle: Desentupidora no Tingui Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora no Tingui Curitiba 24h
 metaDescription: Desentupidora no Tingui, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

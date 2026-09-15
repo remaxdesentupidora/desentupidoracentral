@@ -1,7 +1,7 @@
 ---
 title: Desentupidora no Rebouças - Curitiba
 slug: reboucas
-seoTitle: Desentupidora no Rebouças Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora no Rebouças Curitiba 24h
 metaDescription: Desentupidora no Rebouças, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

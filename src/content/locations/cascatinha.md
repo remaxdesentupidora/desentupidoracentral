@@ -1,7 +1,7 @@
 ---
 title: Desentupidora na Cascatinha - Curitiba
 slug: cascatinha
-seoTitle: Desentupidora na Cascatinha Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora na Cascatinha Curitiba 24h
 metaDescription: Desentupidora na Cascatinha, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

@@ -1,7 +1,7 @@
 ---
 title: Desentupidora no Xaxim - Curitiba
 slug: xaxim
-seoTitle: Desentupidora no Xaxim Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora no Xaxim Curitiba 24h
 metaDescription: Desentupidora no Xaxim, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

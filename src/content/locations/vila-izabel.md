@@ -1,7 +1,7 @@
 ---
 title: Desentupidora na Vila Izabel - Curitiba
 slug: vila-izabel
-seoTitle: Desentupidora na Vila Izabel Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora na Vila Izabel Curitiba 24h
 metaDescription: Desentupidora na Vila Izabel, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

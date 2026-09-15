@@ -1,7 +1,7 @@
 ---
 title: Limpeza de Caixa de Gordura em Curitiba
 slug: limpeza-de-caixa-de-gordura
-seoTitle: Limpeza de Caixa de Gordura em Curitiba | Desentupidora Central
+seoTitle: Limpeza de Caixa de Gordura em Curitiba
 metaDescription: Limpeza de caixa de gordura em Curitiba. Removemos acúmulo de gordura e resíduos, evitando entupimentos futuros. Atendimento 24h.
 serviceType: Limpeza de Caixa de Gordura
 excerpt: A limpeza de caixa de gordura é essencial para manter o bom funcionamento do sistema de esgoto em Curitiba.

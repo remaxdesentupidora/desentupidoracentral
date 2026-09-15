@@ -1,7 +1,7 @@
 ---
 title: Desentupidora no Taboão - Curitiba
 slug: taboao
-seoTitle: Desentupidora no Taboão Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora no Taboão Curitiba 24h
 metaDescription: Desentupidora no Taboão, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

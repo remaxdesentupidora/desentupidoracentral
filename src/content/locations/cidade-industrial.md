@@ -1,7 +1,7 @@
 ---
 title: Desentupidora na Cidade Industrial - Curitiba
 slug: cidade-industrial
-seoTitle: Desentupidora na Cidade Industrial Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora na Cidade Industrial Curitiba 24h
 metaDescription: Desentupidora na Cidade Industrial, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

@@ -1,7 +1,7 @@
 ---
 title: Desentupidora na Caximba - Curitiba
 slug: caximba
-seoTitle: Desentupidora na Caximba Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora na Caximba Curitiba 24h
 metaDescription: Desentupidora na Caximba, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

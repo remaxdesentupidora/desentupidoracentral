@@ -1,7 +1,7 @@
 ---
 title: Desentupidora em Campo Largo
 slug: campo-largo
-seoTitle: Desentupidora em Campo Largo 24h | Desentupidora Central
+seoTitle: Desentupidora em Campo Largo 24h
 metaDescription: Desentupidora em Campo Largo e região. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: cidade
 officialServiceArea: false

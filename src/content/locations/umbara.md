@@ -1,7 +1,7 @@
 ---
 title: Desentupidora no Umbará - Curitiba
 slug: umbara
-seoTitle: Desentupidora no Umbará Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora no Umbará Curitiba 24h
 metaDescription: Desentupidora no Umbará, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

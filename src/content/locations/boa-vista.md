@@ -1,7 +1,7 @@
 ---
 title: Desentupidora na Boa Vista - Curitiba
 slug: boa-vista
-seoTitle: Desentupidora na Boa Vista Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora na Boa Vista Curitiba 24h
 metaDescription: Desentupidora na Boa Vista, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

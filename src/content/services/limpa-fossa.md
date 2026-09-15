@@ -1,7 +1,7 @@
 ---
 title: Limpa Fossa em Curitiba
 slug: limpa-fossa
-seoTitle: Limpa Fossa Curitiba 24h | Desentupidora Central
+seoTitle: Limpa Fossa Curitiba 24h
 metaDescription: Limpeza e desentupimento de fossa em Curitiba, com equipamentos adequados e segurança. Atendimento 24h.
 serviceType: Limpeza de Fossa
 excerpt: Se você está enfrentando problemas com entupimento de fossa, nossa equipe especializada está preparada para ajudar.

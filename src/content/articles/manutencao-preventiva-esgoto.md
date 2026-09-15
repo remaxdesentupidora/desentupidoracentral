@@ -1,7 +1,7 @@
 ---
 title: "Manutenção Preventiva de Esgoto: Como Evitar Entupimentos"
 slug: manutencao-preventiva-esgoto
-seoTitle: Manutenção Preventiva de Esgoto em Curitiba | Desentupidora Central
+seoTitle: Manutenção Preventiva de Esgoto em Curitiba
 metaDescription: Entenda como a manutenção preventiva evita entupimentos de esgoto, os sinais de alerta e quando chamar uma desentupidora em Curitiba.
 ogImage: /uploads/og-artigo-exemplo.jpg
 excerpt: Pequenos cuidados regulares evitam boa parte dos entupimentos de esgoto. Veja o que observar e quando vale a pena agir antes do problema aparecer.

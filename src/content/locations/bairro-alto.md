@@ -1,7 +1,7 @@
 ---
 title: Desentupidora no Bairro Alto - Curitiba
 slug: bairro-alto
-seoTitle: Desentupidora no Bairro Alto Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora no Bairro Alto Curitiba 24h
 metaDescription: Desentupidora no Bairro Alto, Curitiba. Ralo, pia, esgoto e vaso sanitário. Atendimento rápido, 24 horas.
 locationType: bairro
 parentLocationSlug: curitiba

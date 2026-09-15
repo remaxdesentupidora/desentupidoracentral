@@ -1,7 +1,7 @@
 ---
 title: Desentupidora Central - Desentupidora em Curitiba 24h
 slug: home
-seoTitle: Desentupidora em Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora em Curitiba 24h
 metaDescription: Desentupidora em Curitiba e região metropolitana. Ralo, pia, esgoto, fossa, vaso sanitário e hidrojateamento. Chegamos em até 30 minutos.
 publishedDate: 2026-09-14
 blocks:

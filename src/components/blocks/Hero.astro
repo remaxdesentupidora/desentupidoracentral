@@ -509,7 +509,8 @@ function splitHighlights(text: string) {
     padding: 0.35rem 0.9rem;
     border: 1px solid color-mix(in srgb, var(--color-accent) 55%, transparent);
     border-radius: 999px;
-    color: var(--color-accent);
+    background: color-mix(in srgb, var(--color-accent) 10%, var(--color-background));
+    color: color-mix(in srgb, var(--color-accent) 70%, #000000);
     font-size: 0.82rem;
     font-weight: 700;
     letter-spacing: 0.02em;
@@ -554,7 +555,7 @@ function splitHighlights(text: string) {
   }
 
   .hero__pills strong {
-    color: var(--color-accent);
+    color: color-mix(in srgb, var(--color-accent) 70%, #000000);
     font-weight: 700;
   }
 

@@ -1,7 +1,7 @@
 ---
 title: Desentupidora no Ganchinho - Curitiba
 slug: ganchinho
-seoTitle: Desentupidora no Ganchinho Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora no Ganchinho Curitiba 24h
 metaDescription: Desentupidora no Ganchinho, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

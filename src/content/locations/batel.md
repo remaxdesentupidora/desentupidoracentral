@@ -1,7 +1,7 @@
 ---
 title: Desentupidora no Batel - Curitiba
 slug: batel
-seoTitle: Desentupidora no Batel Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora no Batel Curitiba 24h
 metaDescription: Desentupidora no Batel, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

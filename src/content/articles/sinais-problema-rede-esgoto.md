@@ -1,7 +1,7 @@
 ---
 title: Sinais de que o Problema é na Rede de Esgoto, Não em Um Ralo Isolado
 slug: sinais-problema-rede-esgoto
-seoTitle: Problema na Rede de Esgoto ou só um Ralo? | Desentupidora Central
+seoTitle: Problema na Rede de Esgoto ou só um Ralo?
 metaDescription: Aprenda a diferenciar um entupimento isolado de um problema na rede de esgoto que afeta a casa inteira.
 ogImage: /uploads/og-artigo-exemplo.jpg
 excerpt: Nem todo entupimento é local. Veja os sinais de que o problema está na rede de esgoto e afeta mais de um ponto da casa ao mesmo tempo.

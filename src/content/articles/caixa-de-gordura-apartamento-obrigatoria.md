@@ -1,7 +1,7 @@
 ---
 title: "Caixa de Gordura em Apartamento: É Obrigatória?"
 slug: caixa-de-gordura-apartamento-obrigatoria
-seoTitle: Caixa de Gordura em Apartamento é Obrigatória? | Desentupidora Central
+seoTitle: Caixa de Gordura em Apartamento é Obrigatória?
 metaDescription: Entenda quando a caixa de gordura é exigida em apartamentos e edifícios, e por que ela existe mesmo em unidades residenciais.
 ogImage: /uploads/og-artigo-exemplo.jpg
 excerpt: Em prédios residenciais, a caixa de gordura costuma existir mesmo sem o morador perceber. Entenda onde ela fica e por que importa.

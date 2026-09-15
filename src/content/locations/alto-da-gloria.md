@@ -1,7 +1,7 @@
 ---
 title: Desentupidora no Alto da Glória - Curitiba
 slug: alto-da-gloria
-seoTitle: Desentupidora no Alto da Glória Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora no Alto da Glória Curitiba 24h
 metaDescription: Desentupidora no Alto da Glória, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

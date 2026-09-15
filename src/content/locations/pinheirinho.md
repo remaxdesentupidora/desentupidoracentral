@@ -1,7 +1,7 @@
 ---
 title: Desentupidora no Pinheirinho - Curitiba
 slug: pinheirinho
-seoTitle: Desentupidora no Pinheirinho Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora no Pinheirinho Curitiba 24h
 metaDescription: Desentupidora no Pinheirinho, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

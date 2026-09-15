@@ -1,7 +1,7 @@
 ---
 title: Desentupidora no Prado Velho - Curitiba
 slug: prado-velho
-seoTitle: Desentupidora no Prado Velho Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora no Prado Velho Curitiba 24h
 metaDescription: Desentupidora no Prado Velho, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

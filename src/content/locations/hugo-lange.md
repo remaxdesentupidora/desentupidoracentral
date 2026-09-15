@@ -1,7 +1,7 @@
 ---
 title: Desentupidora no Hugo Lange - Curitiba
 slug: hugo-lange
-seoTitle: Desentupidora no Hugo Lange Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora no Hugo Lange Curitiba 24h
 metaDescription: Desentupidora no Hugo Lange, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

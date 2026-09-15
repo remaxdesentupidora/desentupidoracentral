@@ -1,7 +1,7 @@
 ---
 title: Desentupidora no São Miguel - Curitiba
 slug: sao-miguel
-seoTitle: Desentupidora no São Miguel Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora no São Miguel Curitiba 24h
 metaDescription: Desentupidora no São Miguel, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

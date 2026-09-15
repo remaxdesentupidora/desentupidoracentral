@@ -1,7 +1,7 @@
 ---
 title: Desentupimento de Esgoto em Curitiba
 slug: desentupimento-de-esgoto
-seoTitle: Desentupimento de Esgoto Curitiba 24h | Desentupidora Central
+seoTitle: Desentupimento de Esgoto Curitiba 24h
 metaDescription: Desentupimento de esgoto em Curitiba. Técnicas avançadas e equipamentos modernos para resolver o problema com segurança. Atendimento 24h.
 serviceType: Desentupimento de Esgoto
 excerpt: Com anos de experiência, nossa equipe está preparada para lidar com os desafios do desentupimento de esgoto.

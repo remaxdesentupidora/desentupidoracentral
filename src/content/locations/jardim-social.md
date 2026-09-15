@@ -1,7 +1,7 @@
 ---
 title: Desentupidora no Jardim Social - Curitiba
 slug: jardim-social
-seoTitle: Desentupidora no Jardim Social Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora no Jardim Social Curitiba 24h
 metaDescription: Desentupidora no Jardim Social, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

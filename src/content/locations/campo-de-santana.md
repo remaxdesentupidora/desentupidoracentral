@@ -1,7 +1,7 @@
 ---
 title: Desentupidora no Campo de Santana - Curitiba
 slug: campo-de-santana
-seoTitle: Desentupidora no Campo de Santana Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora no Campo de Santana Curitiba 24h
 metaDescription: Desentupidora no Campo de Santana, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

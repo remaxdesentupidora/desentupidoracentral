@@ -1,7 +1,7 @@
 ---
 title: Por Que o Ralo Entope Sempre no Mesmo Lugar?
 slug: ralo-entope-sempre-no-mesmo-lugar
-seoTitle: Por Que o Ralo Entope no Mesmo Lugar? | Desentupidora Central
+seoTitle: Por Que o Ralo Entope no Mesmo Lugar?
 metaDescription: Entenda por que um ralo específico entope com mais frequência que os outros e o que isso pode indicar sobre a tubulação.
 ogImage: /uploads/og-artigo-exemplo.jpg
 excerpt: Se sempre é o mesmo ralo que entope, o motivo geralmente não é falta de cuidado — é a rota que a água percorre até ali. Veja o que costuma causar isso.

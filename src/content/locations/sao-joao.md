@@ -1,7 +1,7 @@
 ---
 title: Desentupidora no São João - Curitiba
 slug: sao-joao
-seoTitle: Desentupidora no São João Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora no São João Curitiba 24h
 metaDescription: Desentupidora no São João, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

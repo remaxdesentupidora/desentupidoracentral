@@ -1,7 +1,7 @@
 ---
 title: Desentupidora no Bigorrilho - Curitiba
 slug: bigorrilho
-seoTitle: Desentupidora no Bigorrilho Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora no Bigorrilho Curitiba 24h
 metaDescription: Desentupidora no Bigorrilho, Curitiba. Ralo, pia, esgoto e vaso sanitário. Atendimento rápido, 24 horas.
 locationType: bairro
 parentLocationSlug: curitiba

@@ -1,7 +1,7 @@
 ---
 title: "Fossa Própria: Intervalo de Limpeza e Sinais de que Está na Hora"
 slug: fossa-propria-intervalo-limpeza
-seoTitle: Quando Limpar a Fossa? Sinais e Intervalo | Desentupidora Central
+seoTitle: Quando Limpar a Fossa? Sinais e Intervalo
 metaDescription: Veja os sinais de que a fossa precisa de limpeza e o que considerar para definir o intervalo ideal na sua casa.
 ogImage: /uploads/og-artigo-exemplo.jpg
 excerpt: Não existe um número mágico de meses para limpar a fossa — depende do uso. Veja os sinais que importam mais que o calendário.

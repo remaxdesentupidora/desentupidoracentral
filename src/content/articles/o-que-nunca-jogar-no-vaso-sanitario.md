@@ -1,7 +1,7 @@
 ---
 title: O Que Nunca Jogar no Vaso Sanitário (e Por Quê)
 slug: o-que-nunca-jogar-no-vaso-sanitario
-seoTitle: O Que Não Jogar no Vaso Sanitário | Desentupidora Central
+seoTitle: O Que Não Jogar no Vaso Sanitário
 metaDescription: Lista do que evitar descartar no vaso sanitário para prevenir entupimentos e problemas na rede de esgoto.
 ogImage: /uploads/og-artigo-exemplo.jpg
 excerpt: 'Alguns itens comuns em casa não deveriam ir pro vaso sanitário — mesmo quando a embalagem sugere que "pode". Veja a lista e o motivo de cada um.'

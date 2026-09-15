@@ -1,7 +1,7 @@
 ---
 title: Desentupidora em Fazenda Rio Grande
 slug: fazenda-rio-grande
-seoTitle: Desentupidora em Fazenda Rio Grande 24h | Desentupidora Central
+seoTitle: Desentupidora em Fazenda Rio Grande 24h
 metaDescription: Desentupidora em Fazenda Rio Grande e região. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: cidade
 population: 161506

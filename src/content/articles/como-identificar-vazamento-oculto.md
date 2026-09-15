@@ -1,7 +1,7 @@
 ---
 title: Como Identificar um Vazamento Oculto na Tubulação Residencial
 slug: como-identificar-vazamento-oculto
-seoTitle: Como Identificar Vazamento Oculto | Desentupidora Central
+seoTitle: Como Identificar Vazamento Oculto
 metaDescription: Aprenda a identificar sinais de vazamento oculto na tubulação residencial e como fazer um teste simples pelo hidrômetro antes de chamar ajuda.
 ogImage: /uploads/og-artigo-exemplo.jpg
 excerpt: Conta de água mais alta sem motivo aparente pode ser sinal de vazamento oculto. Veja os sinais mais comuns e um teste simples para confirmar a suspeita.

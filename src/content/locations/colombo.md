@@ -1,7 +1,7 @@
 ---
 title: Desentupidora em Colombo
 slug: colombo
-seoTitle: Desentupidora em Colombo 24h | Desentupidora Central
+seoTitle: Desentupidora em Colombo 24h
 metaDescription: Desentupidora em Colombo e região. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: cidade
 population: 240720

@@ -1,7 +1,7 @@
 ---
 title: Desentupidora no Mercês - Curitiba
 slug: merces
-seoTitle: Desentupidora no Mercês Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora no Mercês Curitiba 24h
 metaDescription: Desentupidora no Mercês, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

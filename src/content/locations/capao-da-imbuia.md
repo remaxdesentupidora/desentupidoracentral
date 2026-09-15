@@ -1,7 +1,7 @@
 ---
 title: Desentupidora no Capão da Imbuia - Curitiba
 slug: capao-da-imbuia
-seoTitle: Desentupidora no Capão da Imbuia Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora no Capão da Imbuia Curitiba 24h
 metaDescription: Desentupidora no Capão da Imbuia, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

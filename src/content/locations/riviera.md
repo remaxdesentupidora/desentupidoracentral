@@ -1,7 +1,7 @@
 ---
 title: Desentupidora na Riviera - Curitiba
 slug: riviera
-seoTitle: Desentupidora na Riviera Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora na Riviera Curitiba 24h
 metaDescription: Desentupidora na Riviera, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

@@ -1,7 +1,7 @@
 ---
 title: Desentupidora no Pilarzinho - Curitiba
 slug: pilarzinho
-seoTitle: Desentupidora no Pilarzinho Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora no Pilarzinho Curitiba 24h
 metaDescription: Desentupidora no Pilarzinho, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

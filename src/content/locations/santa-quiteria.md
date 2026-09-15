@@ -1,7 +1,7 @@
 ---
 title: Desentupidora na Santa Quitéria - Curitiba
 slug: santa-quiteria
-seoTitle: Desentupidora na Santa Quitéria Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora na Santa Quitéria Curitiba 24h
 metaDescription: Desentupidora na Santa Quitéria, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

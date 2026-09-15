@@ -1,7 +1,7 @@
 ---
 title: Desentupidora no Hauer - Curitiba
 slug: hauer
-seoTitle: Desentupidora no Hauer Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora no Hauer Curitiba 24h
 metaDescription: Desentupidora no Hauer, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

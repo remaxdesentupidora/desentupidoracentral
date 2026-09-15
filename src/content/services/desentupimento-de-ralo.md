@@ -1,7 +1,7 @@
 ---
 title: Desentupimento de Ralo em Curitiba
 slug: desentupimento-de-ralo
-seoTitle: Desentupimento de Ralo em Curitiba 24h | Desentupidora Central
+seoTitle: Desentupimento de Ralo em Curitiba 24h
 metaDescription: Desentupimento de ralo em Curitiba e região. Chegamos em até 30 minutos, cobrimos qualquer orçamento. Atendimento 24h.
 serviceType: Desentupimento de Ralo
 excerpt: Conte com a Desentupidora Central para solucionar problemas de entupimento em ralos na região de Curitiba.

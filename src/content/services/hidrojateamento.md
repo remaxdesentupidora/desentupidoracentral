@@ -1,7 +1,7 @@
 ---
 title: Hidrojateamento em Curitiba
 slug: hidrojateamento
-seoTitle: Hidrojateamento em Curitiba | Desentupidora Central
+seoTitle: Hidrojateamento em Curitiba
 metaDescription: Hidrojateamento em Curitiba para desobstrução de redes pluviais e tubulações. Jatos de alta pressão, equipamento moderno.
 serviceType: Hidrojateamento
 excerpt: O hidrojateamento é uma técnica eficaz para desobstruir redes pluviais e tubulações em geral.

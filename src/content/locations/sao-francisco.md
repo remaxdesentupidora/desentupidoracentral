@@ -1,7 +1,7 @@
 ---
 title: Desentupidora no São Francisco - Curitiba
 slug: sao-francisco
-seoTitle: Desentupidora no São Francisco Curitiba 24h | Desentupidora Central
+seoTitle: Desentupidora no São Francisco Curitiba 24h
 metaDescription: Desentupidora no São Francisco, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba

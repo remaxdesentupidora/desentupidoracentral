@@ -1,7 +1,7 @@
 ---
 title: Desentupidora em Tijucas do Sul
 slug: tijucas-do-sul
-seoTitle: Desentupidora em Tijucas do Sul 24h | Desentupidora Central
+seoTitle: Desentupidora em Tijucas do Sul 24h
 metaDescription: Desentupidora em Tijucas do Sul e região. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: cidade
 population: 18279

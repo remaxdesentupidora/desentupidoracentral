@@ -1,7 +1,7 @@
 ---
 title: Hidrojateamento Resolve Raiz de Árvore na Tubulação?
 slug: hidrojateamento-raiz-arvore-tubulacao
-seoTitle: Hidrojateamento e Raiz de Árvore na Tubulação | Desentupidora Central
+seoTitle: Hidrojateamento e Raiz de Árvore na Tubulação
 metaDescription: Entenda como o hidrojateamento age quando raízes de árvore invadem a tubulação e quando essa técnica é a mais indicada.
 ogImage: /uploads/og-artigo-exemplo.jpg
 excerpt: Raiz de árvore dentro do cano é um dos casos mais difíceis de resolver sem escavar — veja como o hidrojateamento entra nessa situação.

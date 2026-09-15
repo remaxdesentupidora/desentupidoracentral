@@ -1,7 +1,7 @@
 ---
 title: Desentupimento de Vaso Sanitário em Curitiba
 slug: desentupimento-de-vaso-sanitario
-seoTitle: Desentupimento de Vaso Sanitário Curitiba 24h | Desentupidora Central
+seoTitle: Desentupimento de Vaso Sanitário Curitiba 24h
 metaDescription: Desentupimento de vaso sanitário em Curitiba. Atendimento rápido, técnicas adequadas e equipamentos modernos. Atendimento 24h.
 serviceType: Desentupimento de Vaso Sanitário
 excerpt: Nossos profissionais têm ampla experiência em lidar com entupimentos de vasos sanitários.

@@ -1,7 +1,7 @@
 ---
 title: Desentupidora em Contenda
 slug: contenda
-seoTitle: Desentupidora em Contenda 24h | Desentupidora Central
+seoTitle: Desentupidora em Contenda 24h
 metaDescription: Desentupidora em Contenda e região. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: cidade
 population: 19827

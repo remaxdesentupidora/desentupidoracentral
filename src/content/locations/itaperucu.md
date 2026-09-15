@@ -1,7 +1,7 @@
 ---
 title: Desentupidora em Itaperuçu
 slug: itaperucu
-seoTitle: Desentupidora em Itaperuçu 24h | Desentupidora Central
+seoTitle: Desentupidora em Itaperuçu 24h
 metaDescription: Desentupidora em Itaperuçu e região. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: cidade
 population: 32890

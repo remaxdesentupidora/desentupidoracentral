@@ -121,7 +121,7 @@ if (organization.sameAs?.length) {
       whatsappNumber ? (
         <WhatsAppCta
           whatsappNumber={whatsappNumber}
-          siteName={siteName}
+          siteName={organization.name?.trim() || organization.legalName || siteName}
         />
       ) : null
     }

@@ -1,7 +1,7 @@
 ---
 title: Desentupidora em Campina Grande do Sul
 slug: campina-grande-do-sul
-seoTitle: Desentupidora em Campina Grande do Sul 24h | Desentupidora Central
+seoTitle: Desentupidora em Campina Grande do Sul 24h
 metaDescription: Desentupidora em Campina Grande do Sul e região. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: cidade
 population: 49971

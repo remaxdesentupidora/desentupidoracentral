@@ -1,11 +1,11 @@
 [
   {
     "id": "default",
-    "siteName": "Site Exemplo",
+    "siteName": "Desentupidora Central",
     "siteUrl": "https://exemplo.com.br",
     "logo": {
       "path": "/uploads/logo.svg",
-      "alt": "Logotipo do Site Exemplo"
+      "alt": "Desentupidora Central"
     },
     "colors": {
       "primary": "#d92d20",
