@@ -31,13 +31,14 @@ const jsonLd = [
 
 <BaseLayout
   title={pageTitle}
-  description="Conheça todos os serviços da Desentupidora Central em Curitiba: ralo, pia, esgoto, vaso sanitário, fossa, caixa de gordura e hidrojateamento."
+  description="Todos os serviços da Desentupidora Central em Curitiba com garantia por escrito: ralo, pia, esgoto, vaso sanitário, fossa, caixa de gordura e hidrojateamento."
   canonicalPath={canonicalPath}
   jsonLd={jsonLd}
 >
   <SiteNav />
   <main class="index-page">
     <h1>{pageTitle}</h1>
+    <p>Ralo, pia, esgoto, vaso sanitário, fossa, caixa de gordura e hidrojateamento. Todos os serviços com garantia por escrito.</p>
     {
       services.length > 0 ? (
         <ul class="index-page__list">
@@ -65,7 +66,12 @@ const jsonLd = [
   .index-page h1 {
     font-family: var(--font-secondary);
     color: var(--color-primary);
+    margin-bottom: var(--space-3);
+  }
+
+  .index-page p {
     margin-bottom: var(--space-4);
+    color: var(--color-secondary);
   }
 
   .index-page__list {

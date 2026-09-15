@@ -21,7 +21,7 @@ blocks:
   - type: text
     heading: Desentupimento de ralos em Curitiba
     body: |
-      Conte com a Desentupidora Central para solucionar problemas de entupimento em ralos na região de Curitiba. Nossa equipe está equipada para desobstruir ralos de forma rápida e eficiente, garantindo o escoamento correto da água em residências e estabelecimentos comerciais.
+      Conte com a Desentupidora Central para solucionar problemas de entupimento em ralos na região de Curitiba. Nossa equipe está equipada para desobstruir ralos de forma rápida e eficiente, garantindo o escoamento correto da água em residências e estabelecimentos comerciais. Todos os nossos serviços têm garantia por escrito.
 
       Trabalhamos com técnicas específicas para cada tipo de obstrução, evitando danos maiores à tubulação existente.
   - type: text
@@ -48,6 +48,8 @@ blocks:
         answer: Sim, cobrimos qualquer orçamento e trabalhamos com preço justo para cada situação.
       - question: O atendimento é 24 horas?
         answer: Sim, atendemos 24 horas por dia, 7 dias por semana, incluindo emergências.
+      - question: Os serviços têm garantia?
+        answer: Sim. Todos os serviços da Desentupidora Central têm garantia por escrito.
       - question: Produto químico de desentupir resolve o problema?
         answer: Em entupimentos simples pode ajudar, mas o uso repetido pode desgastar a tubulação com o tempo. Para entupimentos recorrentes, o ideal é uma avaliação profissional.
       - question: O ralo entupido pode indicar um problema maior na tubulação?

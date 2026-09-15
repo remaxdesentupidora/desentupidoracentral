@@ -20,7 +20,7 @@ blocks:
   - type: text
     heading: Por que fazer a limpeza da caixa de gordura
     body: |
-      A limpeza de caixa de gordura é essencial para manter o bom funcionamento do sistema de esgoto em Curitiba. Removemos todo o acúmulo de gordura e resíduos, garantindo o correto escoamento e evitando problemas futuros de entupimento.
+      A limpeza de caixa de gordura é essencial para manter o bom funcionamento do sistema de esgoto em Curitiba. Removemos todo o acúmulo de gordura e resíduos, garantindo o correto escoamento e evitando problemas futuros de entupimento. Todos os nossos serviços têm garantia por escrito.
   - type: text
     heading: Como funciona a limpeza de caixa de gordura
     body: |
@@ -43,6 +43,8 @@ blocks:
         answer: Sim, cobrimos qualquer orçamento e trabalhamos com preço justo para cada situação.
       - question: O atendimento é 24 horas?
         answer: Sim, atendemos 24 horas por dia, 7 dias por semana, incluindo emergências.
+      - question: Os serviços têm garantia?
+        answer: Sim. Todos os serviços da Desentupidora Central têm garantia por escrito.
       - question: Estabelecimentos comerciais precisam limpar com mais frequência?
         answer: Sim, cozinhas comerciais geram muito mais gordura no dia a dia, então o intervalo recomendado costuma ser mais curto que em uma residência.
       - question: O que acontece se a caixa de gordura não for limpa por muito tempo?

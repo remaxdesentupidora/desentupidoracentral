@@ -25,7 +25,7 @@ blocks:
     items:
       - Visita sem compromisso
       - Chegamos em até 30min
-      - Garantia de 1 ano
+      - Todos os serviços com garantia por escrito
       - Tecnologia de ponta
       - Pia, vaso, ralo, fossa, esgoto
   - type: text

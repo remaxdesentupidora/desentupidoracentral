@@ -20,7 +20,7 @@ blocks:
   - type: text
     heading: Limpeza e desentupimento de fossa
     body: |
-      Se você está enfrentando problemas com entupimento de fossa, nossa equipe especializada está preparada para ajudar. Com conhecimento técnico e equipamentos adequados, realizamos a limpeza de forma segura e eficaz, garantindo o correto funcionamento do sistema.
+      Se você está enfrentando problemas com entupimento de fossa, nossa equipe especializada está preparada para ajudar. Com conhecimento técnico e equipamentos adequados, realizamos a limpeza de forma segura e eficaz, garantindo o correto funcionamento do sistema. Todos os nossos serviços têm garantia por escrito.
   - type: text
     heading: Como funciona a limpeza de fossa
     body: |
@@ -45,6 +45,8 @@ blocks:
         answer: Sim, cobrimos qualquer orçamento e trabalhamos com preço justo para cada situação.
       - question: O atendimento é 24 horas?
         answer: Sim, atendemos 24 horas por dia, 7 dias por semana, incluindo emergências.
+      - question: Os serviços têm garantia?
+        answer: Sim. Todos os serviços da Desentupidora Central têm garantia por escrito.
       - question: Para onde vai o material removido da fossa?
         answer: É descartado de acordo com as normas ambientais aplicáveis a esse tipo de resíduo.
       - question: Fossa transbordando é uma emergência?

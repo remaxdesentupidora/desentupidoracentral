@@ -20,7 +20,7 @@ blocks:
   - type: text
     heading: Desentupimento de rede de esgoto
     body: |
-      Com anos de experiência, nossa equipe está preparada para lidar com os desafios do desentupimento de esgoto, utilizando técnicas avançadas e equipamentos modernos para resolver o problema de forma eficiente e segura.
+      Com anos de experiência, nossa equipe está preparada para lidar com os desafios do desentupimento de esgoto, utilizando técnicas avançadas e equipamentos modernos para resolver o problema de forma eficiente e segura. Todos os nossos serviços têm garantia por escrito.
   - type: text
     heading: Como funciona o desentupimento de esgoto
     body: |
@@ -43,6 +43,8 @@ blocks:
         answer: Sinais comuns incluem mau cheiro, retorno de água em ralos e demora no escoamento; nossa equipe faz o diagnóstico no local.
       - question: O atendimento é 24 horas?
         answer: Sim, atendemos 24 horas por dia, 7 dias por semana, incluindo emergências.
+      - question: Os serviços têm garantia?
+        answer: Sim. Todos os serviços da Desentupidora Central têm garantia por escrito.
       - question: Raiz de árvore pode entupir a rede de esgoto?
         answer: Sim, é uma causa comum em tubulações mais antigas ou próximas a árvores de grande porte. O hidrojateamento costuma resolver sem precisar escavar.
       - question: Preciso quebrar o quintal para desentupir o esgoto?

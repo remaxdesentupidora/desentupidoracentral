@@ -20,7 +20,7 @@ blocks:
   - type: text
     heading: Desentupimento de vasos sanitários
     body: |
-      Nossos profissionais têm ampla experiência em lidar com entupimentos de vasos sanitários, utilizando técnicas eficientes e equipamentos adequados para desobstruir os canos e restaurar o funcionamento normal do vaso, proporcionando mais conforto e higiene.
+      Nossos profissionais têm ampla experiência em lidar com entupimentos de vasos sanitários, utilizando técnicas eficientes e equipamentos adequados para desobstruir os canos e restaurar o funcionamento normal do vaso, proporcionando mais conforto e higiene. Todos os nossos serviços têm garantia por escrito.
   - type: text
     heading: Como funciona o desentupimento de vaso sanitário
     body: |
@@ -41,6 +41,8 @@ blocks:
         answer: As causas mais comuns são descarte de objetos e papel em excesso, mas cada caso é avaliado no local antes do serviço.
       - question: O atendimento é 24 horas?
         answer: Sim, atendemos 24 horas por dia, 7 dias por semana, incluindo emergências.
+      - question: Os serviços têm garantia?
+        answer: Sim. Todos os serviços da Desentupidora Central têm garantia por escrito.
       - question: Caiu um objeto no vaso sanitário, o que eu faço?
         answer: Evite dar descarga novamente, isso pode empurrar o objeto mais para dentro da tubulação. O ideal é acionar o serviço antes de tentar remover sozinho.
       - question: Desentupidor de borracha pode danificar o vaso?

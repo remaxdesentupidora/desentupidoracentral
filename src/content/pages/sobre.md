@@ -18,7 +18,7 @@ blocks:
 
       Também realizamos limpeza de caixa de gordura, uma etapa importante na manutenção do sistema de esgoto, removendo resíduos acumulados e evitando entupimentos e odores.
 
-      Estamos disponíveis 24 horas por dia, 7 dias por semana, para atender emergências em Curitiba e região metropolitana.
+      Estamos disponíveis 24 horas por dia, 7 dias por semana, para atender emergências em Curitiba e região metropolitana. Todos os serviços são prestados com garantia por escrito.
   - type: serviceGrid
     heading: Nossos serviços
   - type: cta

@@ -20,7 +20,7 @@ blocks:
   - type: text
     heading: Hidrojateamento e redes pluviais
     body: |
-      O hidrojateamento é uma técnica eficaz para desobstruir redes pluviais e tubulações em geral. Consiste na aplicação de jatos de água de alta pressão, capazes de remover detritos e desobstruir tubulações, deixando-as limpas e desimpedidas. Também realizamos a manutenção e desobstrução de redes pluviais, prevenindo alagamentos e danos a estruturas próximas.
+      O hidrojateamento é uma técnica eficaz para desobstruir redes pluviais e tubulações em geral. Consiste na aplicação de jatos de água de alta pressão, capazes de remover detritos e desobstruir tubulações, deixando-as limpas e desimpedidas. Também realizamos a manutenção e desobstrução de redes pluviais, prevenindo alagamentos e danos a estruturas próximas. Todos os nossos serviços têm garantia por escrito.
   - type: text
     heading: Como funciona o processo
     body: |
@@ -45,6 +45,8 @@ blocks:
         answer: É indicado para desobstruções mais complexas em redes pluviais e tubulações, quando técnicas convencionais não resolvem.
       - question: O atendimento é 24 horas?
         answer: Sim, atendemos 24 horas por dia, 7 dias por semana, incluindo emergências.
+      - question: Os serviços têm garantia?
+        answer: Sim. Todos os serviços da Desentupidora Central têm garantia por escrito.
       - question: O hidrojateamento pode danificar a tubulação?
         answer: Quando feito com o equipamento e a pressão adequados para o tipo de tubulação, o processo é seguro. A avaliação da tubulação antes do serviço ajuda a definir a pressão correta.
       - question: Preciso quebrar parede ou piso para fazer hidrojateamento?

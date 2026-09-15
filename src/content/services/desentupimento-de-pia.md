@@ -20,7 +20,7 @@ blocks:
   - type: text
     heading: Desentupimento de pias em Curitiba
     body: |
-      As pias entupidas podem ser um verdadeiro incômodo. Nossos profissionais utilizam técnicas adequadas para desobstruir as pias, garantindo o fluxo adequado de água e trazendo tranquilidade para o seu dia a dia, seja em residência ou comércio.
+      As pias entupidas podem ser um verdadeiro incômodo. Nossos profissionais utilizam técnicas adequadas para desobstruir as pias, garantindo o fluxo adequado de água e trazendo tranquilidade para o seu dia a dia, seja em residência ou comércio. Todos os nossos serviços têm garantia por escrito.
   - type: text
     heading: Como funciona o desentupimento de pia
     body: |
@@ -45,6 +45,8 @@ blocks:
         answer: Sim, cobrimos qualquer orçamento e trabalhamos com preço justo para cada situação.
       - question: O atendimento é 24 horas?
         answer: Sim, atendemos 24 horas por dia, 7 dias por semana, incluindo emergências.
+      - question: Os serviços têm garantia?
+        answer: Sim. Todos os serviços da Desentupidora Central têm garantia por escrito.
       - question: Gordura na pia da cozinha pode causar entupimento mesmo com cuidado no descarte?
         answer: Sim, mesmo com cuidado, um pouco de gordura se acumula com o tempo nas paredes do cano — por isso entupimentos recorrentes na pia da cozinha são comuns mesmo em casas cuidadosas.
       - question: Dá para prevenir entupimento de pia?
