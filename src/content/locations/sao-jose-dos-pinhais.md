@@ -4,6 +4,8 @@ slug: sao-jose-dos-pinhais
 seoTitle: Desentupidora em São José dos Pinhais 24h | Desentupidora Central
 metaDescription: Desentupidora em São José dos Pinhais e região. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: cidade
+population: 345644
+populationSource: "IBGE, estimativa populacional 2024"
 relatedServiceSlugs:
   - desentupimento-de-ralo
   - desentupimento-de-esgoto

@@ -1151,13 +1151,28 @@
       "permanent": true
     },
     {
+      "source": "/locais/champagnat/",
+      "destination": "/locais/bigorrilho/",
+      "permanent": true
+    },
+    {
       "source": "/desentupidora-no-champagnat-curitiba/",
-      "destination": "/locais/champagnat/",
+      "destination": "/locais/bigorrilho/",
       "permanent": true
     },
     {
       "source": "/desentupidora-na-champagnat-curitiba/",
-      "destination": "/locais/champagnat/",
+      "destination": "/locais/bigorrilho/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-bigorrilho-curitiba/",
+      "destination": "/locais/bigorrilho/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-bigorrilho-curitiba/",
+      "destination": "/locais/bigorrilho/",
       "permanent": true
     },
     {

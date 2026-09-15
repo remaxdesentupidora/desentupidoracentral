@@ -14,8 +14,18 @@ import ServiceGrid from '../../components/blocks/ServiceGrid.astro';
 import LocationGrid from '../../components/blocks/LocationGrid.astro';
 import FeatureBanner from '../../components/blocks/FeatureBanner.astro';
 import RelatedServices from '../../components/RelatedServices.astro';
+import NearbyBairros from '../../components/NearbyBairros.astro';
 import { resolveSiteUrl } from '../../lib/site-url';
 import { buildBreadcrumbJsonLd, buildLocalBusinessJsonLd } from '../../lib/schema-org';
+
+function neighborhoodLabel(location: CollectionEntry<'locations'>): string {
+  return (
+    location.data.title
+      .replace(/^Desentupidora\s+(em|no|na)\s+/i, '')
+      .replace(/\s+-\s+Curitiba$/i, '')
+      .trim() || location.data.title
+  );
+}
 
 export const getStaticPaths = (async () => {
   const locations = await getCollection('locations');
@@ -40,15 +50,17 @@ interface Props {
 }
 
 const { entry, parent } = Astro.props;
-const firstHeroIndex = entry.data.blocks.findIndex((block) => block.type === 'hero');
-const canonicalPath = `/locais/${entry.data.slug}`;
+const locations = await getCollection('locations');
+const current = locations.find((location) => location.data.slug === entry.data.slug) ?? entry;
+const firstHeroIndex = current.data.blocks.findIndex((block) => block.type === 'hero');
+const canonicalPath = `/locais/${current.data.slug}`;
 const settings = await getEntry('siteSettings', 'default');
 
 if (!settings) {
   throw new Error('A entry siteSettings com id "default" não foi encontrada.');
 }
 
-const relatedSlugs = entry.data.relatedServiceSlugs ?? [];
+const relatedSlugs = current.data.relatedServiceSlugs ?? [];
 const servicesBySlug = new Map(
   relatedSlugs.length > 0
     ? (await getCollection('services')).map((service) => [service.data.slug, service])
@@ -57,40 +69,59 @@ const servicesBySlug = new Map(
 const relatedServices = relatedSlugs
   .map((slug) => servicesBySlug.get(slug))
   .filter((service): service is CollectionEntry<'services'> => service !== undefined);
-const lastCtaIndex = entry.data.blocks.findLastIndex((block) => block.type === 'cta');
-const locationName = entry.data.title.replace(/^Desentupidora\s+(em|no|na)\s+/i, '').trim() || entry.data.title;
+const lastCtaIndex = current.data.blocks.findLastIndex((block) => block.type === 'cta');
+const locationName = current.data.title.replace(/^Desentupidora\s+(em|no|na)\s+/i, '').trim() || current.data.title;
+const populationValue = Number(current.data.population);
+const formattedPopulation =
+  current.data.locationType === 'cidade' &&
+  current.data.population != null &&
+  Number.isFinite(populationValue)
+    ? new Intl.NumberFormat('pt-BR').format(populationValue)
+    : null;
+const nearbyBairros =
+  current.data.locationType === 'bairro' && current.data.regional
+    ? locations
+        .filter(
+          (location) =>
+            location.data.locationType === 'bairro' &&
+            location.data.regional === current.data.regional &&
+            location.data.slug !== current.data.slug,
+        )
+        .sort((left, right) => neighborhoodLabel(left).localeCompare(neighborhoodLabel(right), 'pt-BR'))
+        .slice(0, 6)
+    : [];
 
 const siteUrl = resolveSiteUrl(settings.data.siteUrl);
 const breadcrumbItems =
-  entry.data.locationType === 'bairro' && parent
+  current.data.locationType === 'bairro' && parent
     ? [
         { name: 'Início', path: '/' },
         { name: parent.data.title, path: `/locais/${parent.data.slug}` },
-        { name: entry.data.title, path: canonicalPath },
+        { name: current.data.title, path: canonicalPath },
       ]
     : [
         { name: 'Início', path: '/' },
-        { name: entry.data.title, path: canonicalPath },
+        { name: current.data.title, path: canonicalPath },
       ];
 
 const jsonLd = [
-  buildLocalBusinessJsonLd(settings.data, entry),
+  buildLocalBusinessJsonLd(settings.data, current),
   buildBreadcrumbJsonLd(breadcrumbItems, siteUrl),
 ].filter((item): item is Record<string, unknown> => item !== null);
 ---
 
 <BaseLayout
-  title={entry.data.seoTitle}
-  description={entry.data.metaDescription}
-  ogImage={entry.data.ogImage}
+  title={current.data.seoTitle}
+  description={current.data.metaDescription}
+  ogImage={current.data.ogImage}
   canonicalPath={canonicalPath}
   jsonLd={jsonLd}
 >
   <SiteNav />
   <main>
-    <h1 class="page-title">{entry.data.title}</h1>
+    <h1 class="page-title">{current.data.title}</h1>
     {
-      entry.data.blocks.map((block, index) => {
+      current.data.blocks.map((block, index) => {
         const rendered = (() => {
           switch (block.type) {
             case 'hero':
@@ -165,7 +196,16 @@ const jsonLd = [
             {relatedServices.length > 0 && index === lastCtaIndex ? (
               <RelatedServices services={relatedServices} locationName={locationName} />
             ) : null}
+            {nearbyBairros.length > 0 && current.data.regional && index === lastCtaIndex ? (
+              <NearbyBairros regional={current.data.regional} bairros={nearbyBairros} />
+            ) : null}
             {rendered}
+            {block.type === 'hero' && formattedPopulation ? (
+              <p class="location-population">
+                População estimada: {formattedPopulation} habitantes
+                {entry.data.populationSource ? ` (${entry.data.populationSource})` : ''}
+              </p>
+            ) : null}
           </>
         );
       })
@@ -173,6 +213,11 @@ const jsonLd = [
     {
       relatedServices.length > 0 && lastCtaIndex < 0 ? (
         <RelatedServices services={relatedServices} locationName={locationName} />
+      ) : null
+    }
+    {
+      nearbyBairros.length > 0 && current.data.regional && lastCtaIndex < 0 ? (
+        <NearbyBairros regional={current.data.regional} bairros={nearbyBairros} />
       ) : null
     }
   </main>
@@ -185,6 +230,12 @@ const jsonLd = [
     font-weight: 600;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    color: var(--color-secondary);
+  }
+
+  .location-population {
+    padding: var(--space-2) var(--space-4) 0;
+    font-size: 0.9375rem;
     color: var(--color-secondary);
   }
 </style>

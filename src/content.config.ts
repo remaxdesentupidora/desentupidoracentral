@@ -193,6 +193,9 @@ const locations = defineCollection({
           lng: z.number(),
         })
         .optional(),
+      population: z.number().optional(),
+      populationSource: z.string().optional(),
+      regional: z.string().optional(),
       blocks: pageBlocksArray(image),
       relatedServiceSlugs: z.array(z.string()).optional(),
       publishedDate: z.coerce.date(),

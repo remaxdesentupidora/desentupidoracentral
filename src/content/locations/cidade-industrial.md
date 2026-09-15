@@ -5,6 +5,7 @@ seoTitle: Desentupidora na Cidade Industrial Curitiba 24h | Desentupidora Centra
 metaDescription: Desentupidora na Cidade Industrial, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba
+regional: CIC
 relatedServiceSlugs:
   - desentupimento-de-ralo
   - desentupimento-de-esgoto

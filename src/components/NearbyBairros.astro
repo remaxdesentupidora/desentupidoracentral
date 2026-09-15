@@ -1,0 +1,98 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  regional: string;
+  bairros: CollectionEntry<'locations'>[];
+}
+
+const { regional, bairros } = Astro.props;
+const headingId = 'nearby-bairros-heading';
+
+function bairroLabel(location: CollectionEntry<'locations'>) {
+  return (
+    location.data.title
+      .replace(/^Desentupidora\s+(em|no|na)\s+/i, '')
+      .replace(/\s+-\s+Curitiba$/i, '')
+      .trim() || location.data.title
+  );
+}
+---
+
+{
+  bairros.length > 0 ? (
+    <section class="nearby-bairros" aria-labelledby={headingId}>
+      <h2 id={headingId}>Bairros da Regional {regional}</h2>
+      <ul class="nearby-bairros__list">
+        {bairros.map((bairro) => (
+          <li>
+            <a class="nearby-bairros__card" href={`/locais/${bairro.data.slug}/`}>
+              <span class="nearby-bairros__title">{bairroLabel(bairro)}</span>
+              <span class="nearby-bairros__more">Ver bairro</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ) : null
+}
+
+<style>
+  .nearby-bairros {
+    padding: var(--space-5) var(--space-4);
+  }
+
+  .nearby-bairros h2 {
+    font-family: var(--font-secondary);
+    margin-bottom: var(--space-3);
+    letter-spacing: var(--heading-letter-spacing);
+    color: var(--color-primary);
+  }
+
+  .nearby-bairros__list {
+    display: grid;
+    gap: var(--space-3);
+    list-style: none;
+    padding: 0;
+  }
+
+  @media (min-width: 768px) {
+    .nearby-bairros__list {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  .nearby-bairros__card {
+    display: grid;
+    gap: var(--space-1);
+    height: 100%;
+    padding: var(--space-3);
+    border: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
+    border-radius: var(--radius-md);
+    background: var(--color-background);
+    box-shadow: var(--shadow-sm);
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .nearby-bairros__card:hover,
+  .nearby-bairros__card:focus-visible {
+    border-color: var(--color-accent);
+  }
+
+  .nearby-bairros__title {
+    font-weight: 700;
+    color: var(--color-primary);
+  }
+
+  .nearby-bairros__card:hover .nearby-bairros__title,
+  .nearby-bairros__card:focus-visible .nearby-bairros__title {
+    color: var(--color-accent);
+  }
+
+  .nearby-bairros__more {
+    margin-top: var(--space-1);
+    font-weight: 600;
+    color: var(--color-accent);
+  }
+</style>

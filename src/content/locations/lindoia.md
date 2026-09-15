@@ -5,6 +5,7 @@ seoTitle: Desentupidora no Lindóia Curitiba 24h | Desentupidora Central
 metaDescription: Desentupidora no Lindóia, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba
+regional: Pinheirinho
 relatedServiceSlugs:
   - desentupimento-de-ralo
   - desentupimento-de-esgoto

@@ -4,6 +4,8 @@ slug: pinhais
 seoTitle: Desentupidora em Pinhais 24h | Desentupidora Central
 metaDescription: Desentupidora em Pinhais e região. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: cidade
+population: 131199
+populationSource: "IBGE, estimativa populacional 2024"
 relatedServiceSlugs:
   - desentupimento-de-ralo
   - desentupimento-de-esgoto

@@ -4,6 +4,8 @@ slug: araucaria
 seoTitle: Desentupidora em Araucária 24h | Desentupidora Central
 metaDescription: Desentupidora em Araucária e região. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: cidade
+population: 160038
+populationSource: "IBGE, estimativa populacional 2024"
 relatedServiceSlugs:
   - desentupimento-de-ralo
   - desentupimento-de-esgoto

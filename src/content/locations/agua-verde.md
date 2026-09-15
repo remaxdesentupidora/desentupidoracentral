@@ -5,6 +5,7 @@ seoTitle: Desentupidora na Água Verde Curitiba 24h | Desentupidora Central
 metaDescription: Desentupidora na Água Verde, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba
+regional: "Fazendinha/Portão"
 relatedServiceSlugs:
   - desentupimento-de-ralo
   - desentupimento-de-esgoto

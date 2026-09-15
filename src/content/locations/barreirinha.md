@@ -5,6 +5,7 @@ seoTitle: Desentupidora na Barreirinha Curitiba 24h | Desentupidora Central
 metaDescription: Desentupidora na Barreirinha, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba
+regional: Boa Vista
 relatedServiceSlugs:
   - desentupimento-de-ralo
   - desentupimento-de-esgoto

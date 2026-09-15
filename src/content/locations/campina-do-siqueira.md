@@ -5,6 +5,7 @@ seoTitle: Desentupidora na Campina do Siqueira Curitiba 24h | Desentupidora Cent
 metaDescription: Desentupidora na Campina do Siqueira, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba
+regional: Santa Felicidade
 relatedServiceSlugs:
   - desentupimento-de-ralo
   - desentupimento-de-esgoto

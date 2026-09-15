@@ -5,6 +5,7 @@ seoTitle: Desentupidora no Sítio Cercado Curitiba 24h | Desentupidora Central
 metaDescription: Desentupidora no Sítio Cercado, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba
+regional: Bairro Novo
 relatedServiceSlugs:
   - desentupimento-de-ralo
   - desentupimento-de-esgoto

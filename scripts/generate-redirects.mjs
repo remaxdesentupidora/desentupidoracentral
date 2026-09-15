@@ -198,6 +198,14 @@ const IRREGULAR_BAIRRO_REDIRECTS = [
   ['/locais/sitio-cercado/', ['/desentupidora-sitio-cercado-curitiba/']],
   ['/locais/bairro-alto/', ['/desentupidora-bairro-alto-curitiba/']],
   ['/locais/boqueirao/', ['/desentupidora-boqueirao-curitiba/']],
+  [
+    '/locais/bigorrilho/',
+    [
+      '/locais/champagnat/',
+      '/desentupidora-no-champagnat-curitiba/',
+      '/desentupidora-na-champagnat-curitiba/',
+    ],
+  ],
 ];
 
 const MANUAL_EXTRA_REDIRECTS = [

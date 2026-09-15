@@ -5,6 +5,7 @@ seoTitle: Desentupidora na Augusta Curitiba 24h | Desentupidora Central
 metaDescription: Desentupidora na Augusta, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba
+regional: CIC
 relatedServiceSlugs:
   - desentupimento-de-ralo
   - desentupimento-de-esgoto

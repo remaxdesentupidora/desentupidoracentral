@@ -5,6 +5,7 @@ seoTitle: Desentupidora no Mossunguê (Ecoville) Curitiba 24h | Desentupidora Ce
 metaDescription: Desentupidora no Mossunguê (Ecoville), Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba
+regional: Santa Felicidade
 relatedServiceSlugs:
   - desentupimento-de-ralo
   - desentupimento-de-esgoto

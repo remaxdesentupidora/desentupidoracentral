@@ -4,6 +4,8 @@ slug: quatro-barras
 seoTitle: Desentupidora em Quatro Barras 24h | Desentupidora Central
 metaDescription: Desentupidora em Quatro Barras e região. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: cidade
+population: 25109
+populationSource: "IBGE, estimativa populacional 2024"
 relatedServiceSlugs:
   - desentupimento-de-ralo
   - desentupimento-de-esgoto

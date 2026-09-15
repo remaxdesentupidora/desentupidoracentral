@@ -5,6 +5,7 @@ seoTitle: Desentupidora no Bacacheri Curitiba 24h | Desentupidora Central
 metaDescription: Desentupidora no Bacacheri, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba
+regional: Boa Vista
 relatedServiceSlugs:
   - desentupimento-de-ralo
   - desentupimento-de-esgoto

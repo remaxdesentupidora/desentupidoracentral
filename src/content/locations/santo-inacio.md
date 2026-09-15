@@ -5,6 +5,7 @@ seoTitle: Desentupidora no Santo Inácio Curitiba 24h | Desentupidora Central
 metaDescription: Desentupidora no Santo Inácio, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba
+regional: Santa Felicidade
 relatedServiceSlugs:
   - desentupimento-de-ralo
   - desentupimento-de-esgoto

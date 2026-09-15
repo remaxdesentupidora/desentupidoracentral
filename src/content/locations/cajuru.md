@@ -5,6 +5,7 @@ seoTitle: Desentupidora no Cajuru Curitiba 24h | Desentupidora Central
 metaDescription: Desentupidora no Cajuru, Curitiba. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: bairro
 parentLocationSlug: curitiba
+regional: Cajuru
 relatedServiceSlugs:
   - desentupimento-de-ralo
   - desentupimento-de-esgoto

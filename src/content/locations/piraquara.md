@@ -4,6 +4,8 @@ slug: piraquara
 seoTitle: Desentupidora em Piraquara 24h | Desentupidora Central
 metaDescription: Desentupidora em Piraquara e região. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: cidade
+population: 124934
+populationSource: "IBGE, estimativa populacional 2024"
 relatedServiceSlugs:
   - desentupimento-de-ralo
   - desentupimento-de-esgoto

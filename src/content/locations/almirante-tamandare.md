@@ -4,6 +4,8 @@ slug: almirante-tamandare
 seoTitle: Desentupidora em Almirante Tamandaré 24h | Desentupidora Central
 metaDescription: Desentupidora em Almirante Tamandaré e região. Ralo, pia, esgoto, vaso sanitário e fossa. Atendimento 24h.
 locationType: cidade
+population: 124788
+populationSource: "IBGE, estimativa populacional 2024"
 relatedServiceSlugs:
   - desentupimento-de-ralo
   - desentupimento-de-esgoto
