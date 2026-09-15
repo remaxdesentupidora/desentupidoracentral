@@ -1,0 +1,109 @@
+---
+import { getEntry } from 'astro:content';
+
+const settings = await getEntry('siteSettings', 'default');
+
+const siteName = settings?.data.siteName ?? '';
+const organization = settings?.data.organization;
+const organizationName = organization?.legalName ?? siteName;
+const telephone = organization?.telephone?.trim();
+const whatsappNumber = organization?.whatsappNumber?.replace(/\D/g, '') ?? '';
+const whatsappHref = whatsappNumber ? `https://wa.me/${whatsappNumber}` : null;
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <section class="site-footer__org" aria-labelledby="footer-org-heading">
+      <h2 id="footer-org-heading">{organizationName}</h2>
+      {
+        telephone ? (
+          <p>
+            <a href={`tel:${telephone.replace(/\s/g, '')}`}>{telephone}</a>
+          </p>
+        ) : null
+      }
+      {
+        whatsappHref ? (
+          <p>
+            <a href={whatsappHref} target="_blank" rel="noopener noreferrer">
+              WhatsApp
+            </a>
+          </p>
+        ) : null
+      }
+    </section>
+
+    <nav class="site-footer__nav" aria-labelledby="footer-nav-heading">
+      <h2 id="footer-nav-heading">Navegação</h2>
+      <ul>
+        <li><a href="/servicos/">Serviços</a></li>
+        <li><a href="/locais/">Áreas atendidas</a></li>
+        <li><a href="/blog/">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+  <p class="site-footer__copy">© {year} {organizationName}</p>
+</footer>
+
+<style>
+  .site-footer {
+    margin-top: var(--space-6);
+    padding: var(--space-5) var(--space-4) var(--space-6);
+    border-top: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
+    background: color-mix(in srgb, var(--color-text) 4%, var(--color-background));
+  }
+
+  .site-footer__inner {
+    display: grid;
+    gap: var(--space-5);
+    max-width: 72rem;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 768px) {
+    .site-footer__inner {
+      grid-template-columns: minmax(12rem, 1fr) minmax(14rem, 1fr);
+      align-items: start;
+    }
+  }
+
+  .site-footer h2 {
+    font-family: var(--font-secondary);
+    font-size: 1.125rem;
+    margin-bottom: var(--space-2);
+    letter-spacing: var(--heading-letter-spacing);
+    color: var(--color-primary);
+  }
+
+  .site-footer a {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  .site-footer a:hover,
+  .site-footer a:focus-visible {
+    color: var(--color-accent);
+    text-decoration: underline;
+  }
+
+  .site-footer__org p {
+    margin-top: var(--space-1);
+  }
+
+  .site-footer__nav ul {
+    display: grid;
+    gap: var(--space-1);
+    list-style: none;
+    padding: 0;
+  }
+
+  .site-footer__copy {
+    max-width: 72rem;
+    margin: var(--space-5) auto 0;
+    padding-top: var(--space-3);
+    border-top: 1px solid color-mix(in srgb, var(--color-text) 10%, transparent);
+    color: var(--color-secondary);
+    font-size: 0.875rem;
+  }
+</style>

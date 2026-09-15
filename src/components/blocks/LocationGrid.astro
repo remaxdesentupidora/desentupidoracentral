@@ -1,0 +1,86 @@
+---
+import { getCollection } from 'astro:content';
+import { isOfficialServiceArea } from '../../lib/locations';
+
+interface Props {
+  heading?: string;
+  locationType?: 'cidade' | 'bairro';
+  headingLevel?: 1 | 2;
+}
+
+const { heading, locationType = 'cidade', headingLevel = 2 } = Astro.props;
+const HeadingTag = headingLevel === 1 ? 'h1' : 'h2';
+
+const locations = (await getCollection('locations'))
+  .filter(
+    (location) =>
+      isOfficialServiceArea(location) && location.data.locationType === locationType,
+  )
+  .sort((left, right) => left.data.title.localeCompare(right.data.title, 'pt-BR'));
+---
+
+{
+  locations.length > 0 ? (
+    <section class="location-grid" aria-label={heading ? undefined : 'Áreas atendidas'}>
+      {heading ? <HeadingTag>{heading}</HeadingTag> : null}
+      <ul class="location-grid__list">
+        {locations.map((location) => (
+          <li>
+            <a class="location-grid__card" href={`/locais/${location.data.slug}/`}>
+              {location.data.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ) : null
+}
+
+<style>
+  .location-grid {
+    padding: var(--space-5) var(--space-4);
+  }
+
+  .location-grid :is(h1, h2) {
+    font-family: var(--font-secondary);
+    margin-bottom: var(--space-3);
+    letter-spacing: var(--heading-letter-spacing);
+    color: var(--color-primary);
+  }
+
+  .location-grid__list {
+    display: grid;
+    gap: var(--space-2);
+    list-style: none;
+    padding: 0;
+  }
+
+  @media (min-width: 640px) {
+    .location-grid__list {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 960px) {
+    .location-grid__list {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  .location-grid__card {
+    display: block;
+    padding: var(--space-3);
+    border: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
+    border-radius: var(--radius-md);
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .location-grid__card:hover,
+  .location-grid__card:focus-visible {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+  }
+</style>

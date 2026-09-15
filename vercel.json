@@ -1,0 +1,1794 @@
+{
+  "redirects": [
+    {
+      "source": "/desentupidora-de-vaso-curitiba/",
+      "destination": "/servicos/desentupimento-de-vaso-sanitario/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-vaso-em-curitiba/",
+      "destination": "/servicos/desentupimento-de-vaso-sanitario/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-vaso-curitiba/",
+      "destination": "/servicos/desentupimento-de-vaso-sanitario/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-vaso-sanitario-curitiba/",
+      "destination": "/servicos/desentupimento-de-vaso-sanitario/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-vaso-sanitario-em-ponta/",
+      "destination": "/servicos/desentupimento-de-vaso-sanitario/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidores-de-vaso-curitiba/",
+      "destination": "/servicos/desentupimento-de-vaso-sanitario/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupir-vaso-sanitario-curitiba/",
+      "destination": "/servicos/desentupimento-de-vaso-sanitario/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupir-vaso-curitiba/",
+      "destination": "/servicos/desentupimento-de-vaso-sanitario/",
+      "permanent": true
+    },
+    {
+      "source": "/vaso-entupido-curitiba/",
+      "destination": "/servicos/desentupimento-de-vaso-sanitario/",
+      "permanent": true
+    },
+    {
+      "source": "/vaso-sanitario-entupido-curitiba/",
+      "destination": "/servicos/desentupimento-de-vaso-sanitario/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupir-privada-curitiba/",
+      "destination": "/servicos/desentupimento-de-vaso-sanitario/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-pia-em-curitiba/",
+      "destination": "/servicos/desentupimento-de-pia/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-pia-curitiba/",
+      "destination": "/servicos/desentupimento-de-pia/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-pia-curitiba/",
+      "destination": "/servicos/desentupimento-de-pia/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupir-pia-da-cozinha-curitiba/",
+      "destination": "/servicos/desentupimento-de-pia/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupir-pia-de-cozinha-curitiba/",
+      "destination": "/servicos/desentupimento-de-pia/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupir-pia-do-banheiro-curitiba/",
+      "destination": "/servicos/desentupimento-de-pia/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupir-cano-da-pia-curitiba/",
+      "destination": "/servicos/desentupimento-de-pia/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupir-cano-de-pia-curitiba/",
+      "destination": "/servicos/desentupimento-de-pia/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupir-canos-cozinha-curitiba/",
+      "destination": "/servicos/desentupimento-de-pia/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupir-cano-cozinha-curitiba/",
+      "destination": "/servicos/desentupimento-de-pia/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupindo-pia-curitiba/",
+      "destination": "/servicos/desentupimento-de-pia/",
+      "permanent": true
+    },
+    {
+      "source": "/pia-entupida-curitiba/",
+      "destination": "/servicos/desentupimento-de-pia/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-esgoto-em-curitiba/",
+      "destination": "/servicos/desentupimento-de-esgoto/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-esgoto-residencial-curitiba/",
+      "destination": "/servicos/desentupimento-de-esgoto/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-esgoto-preco-curitiba/",
+      "destination": "/servicos/desentupimento-de-esgoto/",
+      "permanent": true
+    },
+    {
+      "source": "/telefone-desentupidora-de-esgoto-curitiba/",
+      "destination": "/servicos/desentupimento-de-esgoto/",
+      "permanent": true
+    },
+    {
+      "source": "/empresa-desentupir-esgoto-curitiba/",
+      "destination": "/servicos/desentupimento-de-esgoto/",
+      "permanent": true
+    },
+    {
+      "source": "/empresa-de-desentupir-esgoto-curitiba/",
+      "destination": "/servicos/desentupimento-de-esgoto/",
+      "permanent": true
+    },
+    {
+      "source": "/empresa-de-desentupimento-de-esgoto-curitiba/",
+      "destination": "/servicos/desentupimento-de-esgoto/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-esgoto-zona-leste-curitiba/",
+      "destination": "/servicos/desentupimento-de-esgoto/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-esgoto-zona-norte-curitiba/",
+      "destination": "/servicos/desentupimento-de-esgoto/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-esgoto-zona-oeste-curitiba/",
+      "destination": "/servicos/desentupimento-de-esgoto/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-esgoto-zona-sul-curitiba/",
+      "destination": "/servicos/desentupimento-de-esgoto/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupimentos-de-esgotos-curitiba/",
+      "destination": "/servicos/desentupimento-de-esgoto/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupimento-de-esgoto-em-curitiba/",
+      "destination": "/servicos/desentupimento-de-esgoto/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-ralo-curitiba/",
+      "destination": "/servicos/desentupimento-de-ralo/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupir-ralo-curitiba/",
+      "destination": "/servicos/desentupimento-de-ralo/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupir-ralo-de-pia-curitiba/",
+      "destination": "/servicos/desentupimento-de-ralo/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupir-ralo-do-banheiro-curitiba/",
+      "destination": "/servicos/desentupimento-de-ralo/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupir-ralo-do-chuveiro-curitiba/",
+      "destination": "/servicos/desentupimento-de-ralo/",
+      "permanent": true
+    },
+    {
+      "source": "/ralo-entupido-curitiba/",
+      "destination": "/servicos/desentupimento-de-ralo/",
+      "permanent": true
+    },
+    {
+      "source": "/ralo-do-banheiro-entupido-curitiba/",
+      "destination": "/servicos/desentupimento-de-ralo/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupir-ralo-da-pia-curitiba/",
+      "destination": "/servicos/desentupimento-de-ralo/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-encanamento-curitiba/",
+      "destination": "/servicos/desentupimento-de-ralo/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-cano-em-curitiba/",
+      "destination": "/servicos/desentupimento-de-ralo/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-cano-curitiba/",
+      "destination": "/servicos/desentupimento-de-ralo/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-cano-curitiba/",
+      "destination": "/servicos/desentupimento-de-ralo/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-cano-de-esgoto-curitiba/",
+      "destination": "/servicos/desentupimento-de-ralo/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupir-encanamento-curitiba/",
+      "destination": "/servicos/desentupimento-de-ralo/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupir-cano-de-esgoto-curitiba/",
+      "destination": "/servicos/desentupimento-de-ralo/",
+      "permanent": true
+    },
+    {
+      "source": "/empresa-desentupir-canos-curitiba/",
+      "destination": "/servicos/desentupimento-de-ralo/",
+      "permanent": true
+    },
+    {
+      "source": "/empresa-de-desentupir-canos-curitiba/",
+      "destination": "/servicos/desentupimento-de-ralo/",
+      "permanent": true
+    },
+    {
+      "source": "/empresas-de-desentupimentos-curitiba/",
+      "destination": "/servicos/desentupimento-de-ralo/",
+      "permanent": true
+    },
+    {
+      "source": "/empresa-de-desentupimentos-curitiba/",
+      "destination": "/servicos/desentupimento-de-ralo/",
+      "permanent": true
+    },
+    {
+      "source": "/empresa-de-desentupimento-curitiba/",
+      "destination": "/servicos/desentupimento-de-ralo/",
+      "permanent": true
+    },
+    {
+      "source": "/empresa-de-desentupir-em-curitiba/",
+      "destination": "/servicos/desentupimento-de-ralo/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupimentos-de-canos-curitiba/",
+      "destination": "/servicos/desentupimento-de-ralo/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupimentos-curitiba/",
+      "destination": "/servicos/desentupimento-de-ralo/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupimento-curitiba/",
+      "destination": "/servicos/desentupimento-de-ralo/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupimento-de-ralo-industrial/",
+      "destination": "/servicos/desentupimento-de-ralo/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-caixa-de-gordura-curitiba/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupir-caixa-de-gordura-curitiba/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/caixa-de-gordura-entupida-curitiba/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-fossa-em-curitiba/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-fossa-curitiba/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-curitiba-2/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-fossa-curitiba/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-curitiba/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-em-curitiba/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-para-desentupimento-de-tubulacoes/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-inspecao-com-hidrojateamento/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-curitiba/",
+      "destination": "/locais/curitiba/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidoras-em-curitiba/",
+      "destination": "/locais/curitiba/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-24-horas-curitiba/",
+      "destination": "/locais/curitiba/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-24h-curitiba/",
+      "destination": "/locais/curitiba/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-curitiba-24-horas/",
+      "destination": "/locais/curitiba/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-rapida-em-curitiba/",
+      "destination": "/locais/curitiba/",
+      "permanent": true
+    },
+    {
+      "source": "/rapida-desentupidora-em-curitiba/",
+      "destination": "/locais/curitiba/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-perto-de-mim-em-curitiba/",
+      "destination": "/locais/curitiba/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-perto-de-mim-curitiba/",
+      "destination": "/locais/curitiba/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-preco-fixo-curitiba/",
+      "destination": "/locais/curitiba/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-manual-curitiba/",
+      "destination": "/locais/curitiba/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-em-curitiba/",
+      "destination": "/locais/curitiba/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-em-curitiba-24-horas/",
+      "destination": "/locais/curitiba/",
+      "permanent": true
+    },
+    {
+      "source": "/caca-vazamento-curitiba/",
+      "destination": "/locais/curitiba/",
+      "permanent": true
+    },
+    {
+      "source": "/noticias/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/whatsapp/",
+      "destination": "https://wa.me/5541988119944",
+      "permanent": true
+    },
+    {
+      "source": "/whatsappeee/",
+      "destination": "https://wa.me/5541988119944",
+      "permanent": true
+    },
+    {
+      "source": "/mapa-do-site/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-em-almirante-tamandare/",
+      "destination": "/locais/almirante-tamandare/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-em-almirante-tamandare/",
+      "destination": "/locais/almirante-tamandare/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-almirante-tamandare/",
+      "destination": "/locais/almirante-tamandare/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-em-almirante-tamandare/",
+      "destination": "/locais/almirante-tamandare/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupimento-de-esgoto-em-almirante-tamandare/",
+      "destination": "/locais/almirante-tamandare/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidoras-em-almirante-tamandare/",
+      "destination": "/locais/almirante-tamandare/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-em-araucaria/",
+      "destination": "/locais/araucaria/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-em-araucaria/",
+      "destination": "/locais/araucaria/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-araucaria/",
+      "destination": "/locais/araucaria/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-em-araucaria/",
+      "destination": "/locais/araucaria/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupimento-de-esgoto-em-araucaria/",
+      "destination": "/locais/araucaria/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidoras-em-araucaria/",
+      "destination": "/locais/araucaria/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-em-campina-grande-do-sul/",
+      "destination": "/locais/campina-grande-do-sul/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-em-campina-grande-do-sul/",
+      "destination": "/locais/campina-grande-do-sul/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-campina-grande-do-sul/",
+      "destination": "/locais/campina-grande-do-sul/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-em-campina-grande-do-sul/",
+      "destination": "/locais/campina-grande-do-sul/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupimento-de-esgoto-em-campina-grande-do-sul/",
+      "destination": "/locais/campina-grande-do-sul/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidoras-em-campina-grande-do-sul/",
+      "destination": "/locais/campina-grande-do-sul/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-em-colombo/",
+      "destination": "/locais/colombo/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-em-colombo/",
+      "destination": "/locais/colombo/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-colombo/",
+      "destination": "/locais/colombo/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-em-colombo/",
+      "destination": "/locais/colombo/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupimento-de-esgoto-em-colombo/",
+      "destination": "/locais/colombo/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidoras-em-colombo/",
+      "destination": "/locais/colombo/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-em-contenda/",
+      "destination": "/locais/contenda/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-em-contenda/",
+      "destination": "/locais/contenda/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-contenda/",
+      "destination": "/locais/contenda/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-em-contenda/",
+      "destination": "/locais/contenda/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupimento-de-esgoto-em-contenda/",
+      "destination": "/locais/contenda/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidoras-em-contenda/",
+      "destination": "/locais/contenda/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-em-fazenda-rio-grande/",
+      "destination": "/locais/fazenda-rio-grande/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-em-fazenda-rio-grande/",
+      "destination": "/locais/fazenda-rio-grande/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-fazenda-rio-grande/",
+      "destination": "/locais/fazenda-rio-grande/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-em-fazenda-rio-grande/",
+      "destination": "/locais/fazenda-rio-grande/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupimento-de-esgoto-em-fazenda-rio-grande/",
+      "destination": "/locais/fazenda-rio-grande/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidoras-em-fazenda-rio-grande/",
+      "destination": "/locais/fazenda-rio-grande/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-em-itaperucu/",
+      "destination": "/locais/itaperucu/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-em-itaperucu/",
+      "destination": "/locais/itaperucu/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-itaperucu/",
+      "destination": "/locais/itaperucu/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-em-itaperucu/",
+      "destination": "/locais/itaperucu/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupimento-de-esgoto-em-itaperucu/",
+      "destination": "/locais/itaperucu/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidoras-em-itaperucu/",
+      "destination": "/locais/itaperucu/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-em-mandirituba/",
+      "destination": "/locais/mandirituba/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-em-mandirituba/",
+      "destination": "/locais/mandirituba/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-mandirituba/",
+      "destination": "/locais/mandirituba/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-em-mandirituba/",
+      "destination": "/locais/mandirituba/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupimento-de-esgoto-em-mandirituba/",
+      "destination": "/locais/mandirituba/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidoras-em-mandirituba/",
+      "destination": "/locais/mandirituba/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-em-pinhais/",
+      "destination": "/locais/pinhais/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-em-pinhais/",
+      "destination": "/locais/pinhais/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-pinhais/",
+      "destination": "/locais/pinhais/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-em-pinhais/",
+      "destination": "/locais/pinhais/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupimento-de-esgoto-em-pinhais/",
+      "destination": "/locais/pinhais/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidoras-em-pinhais/",
+      "destination": "/locais/pinhais/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-em-piraquara/",
+      "destination": "/locais/piraquara/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-em-piraquara/",
+      "destination": "/locais/piraquara/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-piraquara/",
+      "destination": "/locais/piraquara/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-em-piraquara/",
+      "destination": "/locais/piraquara/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupimento-de-esgoto-em-piraquara/",
+      "destination": "/locais/piraquara/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidoras-em-piraquara/",
+      "destination": "/locais/piraquara/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-em-quatro-barras/",
+      "destination": "/locais/quatro-barras/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-em-quatro-barras/",
+      "destination": "/locais/quatro-barras/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-quatro-barras/",
+      "destination": "/locais/quatro-barras/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-em-quatro-barras/",
+      "destination": "/locais/quatro-barras/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupimento-de-esgoto-em-quatro-barras/",
+      "destination": "/locais/quatro-barras/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidoras-em-quatro-barras/",
+      "destination": "/locais/quatro-barras/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-em-quitandinha/",
+      "destination": "/locais/quitandinha/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-em-quitandinha/",
+      "destination": "/locais/quitandinha/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-quitandinha/",
+      "destination": "/locais/quitandinha/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-em-quitandinha/",
+      "destination": "/locais/quitandinha/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupimento-de-esgoto-em-quitandinha/",
+      "destination": "/locais/quitandinha/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidoras-em-quitandinha/",
+      "destination": "/locais/quitandinha/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-em-sao-jose-dos-pinhais/",
+      "destination": "/locais/sao-jose-dos-pinhais/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-em-sao-jose-dos-pinhais/",
+      "destination": "/locais/sao-jose-dos-pinhais/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-sao-jose-dos-pinhais/",
+      "destination": "/locais/sao-jose-dos-pinhais/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-em-sao-jose-dos-pinhais/",
+      "destination": "/locais/sao-jose-dos-pinhais/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupimento-de-esgoto-em-sao-jose-dos-pinhais/",
+      "destination": "/locais/sao-jose-dos-pinhais/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidoras-em-sao-jose-dos-pinhais/",
+      "destination": "/locais/sao-jose-dos-pinhais/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-em-tijucas-do-sul/",
+      "destination": "/locais/tijucas-do-sul/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-em-tijucas-do-sul/",
+      "destination": "/locais/tijucas-do-sul/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-tijucas-do-sul/",
+      "destination": "/locais/tijucas-do-sul/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-em-tijucas-do-sul/",
+      "destination": "/locais/tijucas-do-sul/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupimento-de-esgoto-em-tijucas-do-sul/",
+      "destination": "/locais/tijucas-do-sul/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidoras-em-tijucas-do-sul/",
+      "destination": "/locais/tijucas-do-sul/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-abranches-curitiba/",
+      "destination": "/locais/abranches/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-abranches-curitiba/",
+      "destination": "/locais/abranches/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-agua-verde-curitiba/",
+      "destination": "/locais/agua-verde/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-agua-verde-curitiba/",
+      "destination": "/locais/agua-verde/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-ahu-curitiba/",
+      "destination": "/locais/ahu/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-ahu-curitiba/",
+      "destination": "/locais/ahu/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-alto-boqueirao-curitiba/",
+      "destination": "/locais/alto-boqueirao/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-alto-boqueirao-curitiba/",
+      "destination": "/locais/alto-boqueirao/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-alto-da-gloria-curitiba/",
+      "destination": "/locais/alto-da-gloria/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-alto-da-gloria-curitiba/",
+      "destination": "/locais/alto-da-gloria/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-alto-da-xv-curitiba/",
+      "destination": "/locais/alto-da-xv/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-alto-da-xv-curitiba/",
+      "destination": "/locais/alto-da-xv/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-atuba-curitiba/",
+      "destination": "/locais/atuba/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-atuba-curitiba/",
+      "destination": "/locais/atuba/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-augusta-curitiba/",
+      "destination": "/locais/augusta/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-augusta-curitiba/",
+      "destination": "/locais/augusta/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-bacacheri-curitiba/",
+      "destination": "/locais/bacacheri/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-bacacheri-curitiba/",
+      "destination": "/locais/bacacheri/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-barreirinha-curitiba/",
+      "destination": "/locais/barreirinha/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-barreirinha-curitiba/",
+      "destination": "/locais/barreirinha/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-batel-curitiba/",
+      "destination": "/locais/batel/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-batel-curitiba/",
+      "destination": "/locais/batel/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-boa-vista-curitiba/",
+      "destination": "/locais/boa-vista/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-boa-vista-curitiba/",
+      "destination": "/locais/boa-vista/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-bom-retiro-curitiba/",
+      "destination": "/locais/bom-retiro/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-bom-retiro-curitiba/",
+      "destination": "/locais/bom-retiro/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-boqueirao-curitiba/",
+      "destination": "/locais/boqueirao/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-boqueirao-curitiba/",
+      "destination": "/locais/boqueirao/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-butiatuvinha-curitiba/",
+      "destination": "/locais/butiatuvinha/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-butiatuvinha-curitiba/",
+      "destination": "/locais/butiatuvinha/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-cabral-curitiba/",
+      "destination": "/locais/cabral/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-cabral-curitiba/",
+      "destination": "/locais/cabral/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-cachoeira-curitiba/",
+      "destination": "/locais/cachoeira/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-cachoeira-curitiba/",
+      "destination": "/locais/cachoeira/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-cajuru-curitiba/",
+      "destination": "/locais/cajuru/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-cajuru-curitiba/",
+      "destination": "/locais/cajuru/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-campina-do-siqueira-curitiba/",
+      "destination": "/locais/campina-do-siqueira/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-campina-do-siqueira-curitiba/",
+      "destination": "/locais/campina-do-siqueira/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-campo-comprido-curitiba/",
+      "destination": "/locais/campo-comprido/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-campo-comprido-curitiba/",
+      "destination": "/locais/campo-comprido/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-campo-de-santana-curitiba/",
+      "destination": "/locais/campo-de-santana/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-campo-de-santana-curitiba/",
+      "destination": "/locais/campo-de-santana/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-capao-da-imbuia-curitiba/",
+      "destination": "/locais/capao-da-imbuia/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-capao-da-imbuia-curitiba/",
+      "destination": "/locais/capao-da-imbuia/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-capao-raso-curitiba/",
+      "destination": "/locais/capao-raso/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-capao-raso-curitiba/",
+      "destination": "/locais/capao-raso/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-cascatinha-curitiba/",
+      "destination": "/locais/cascatinha/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-cascatinha-curitiba/",
+      "destination": "/locais/cascatinha/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-caximba-curitiba/",
+      "destination": "/locais/caximba/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-caximba-curitiba/",
+      "destination": "/locais/caximba/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-centro-curitiba/",
+      "destination": "/locais/centro/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-centro-curitiba/",
+      "destination": "/locais/centro/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-centro-civico-curitiba/",
+      "destination": "/locais/centro-civico/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-centro-civico-curitiba/",
+      "destination": "/locais/centro-civico/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-centro-historico-curitiba/",
+      "destination": "/locais/centro-historico/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-centro-historico-curitiba/",
+      "destination": "/locais/centro-historico/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-champagnat-curitiba/",
+      "destination": "/locais/champagnat/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-champagnat-curitiba/",
+      "destination": "/locais/champagnat/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-cidade-industrial-curitiba/",
+      "destination": "/locais/cidade-industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-cidade-industrial-curitiba/",
+      "destination": "/locais/cidade-industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-cristo-rei-curitiba/",
+      "destination": "/locais/cristo-rei/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-cristo-rei-curitiba/",
+      "destination": "/locais/cristo-rei/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-fanny-curitiba/",
+      "destination": "/locais/fanny/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-fanny-curitiba/",
+      "destination": "/locais/fanny/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-fazendinha-curitiba/",
+      "destination": "/locais/fazendinha/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-fazendinha-curitiba/",
+      "destination": "/locais/fazendinha/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-ganchinho-curitiba/",
+      "destination": "/locais/ganchinho/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-ganchinho-curitiba/",
+      "destination": "/locais/ganchinho/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-guabirotuba-curitiba/",
+      "destination": "/locais/guabirotuba/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-guabirotuba-curitiba/",
+      "destination": "/locais/guabirotuba/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-guaira-curitiba/",
+      "destination": "/locais/guaira/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-guaira-curitiba/",
+      "destination": "/locais/guaira/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-hauer-curitiba/",
+      "destination": "/locais/hauer/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-hauer-curitiba/",
+      "destination": "/locais/hauer/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-hugo-lange-curitiba/",
+      "destination": "/locais/hugo-lange/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-hugo-lange-curitiba/",
+      "destination": "/locais/hugo-lange/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-jardim-botanico-curitiba/",
+      "destination": "/locais/jardim-botanico/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-jardim-botanico-curitiba/",
+      "destination": "/locais/jardim-botanico/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-jardim-das-americas-curitiba/",
+      "destination": "/locais/jardim-das-americas/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-jardim-das-americas-curitiba/",
+      "destination": "/locais/jardim-das-americas/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-jardim-social-curitiba/",
+      "destination": "/locais/jardim-social/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-jardim-social-curitiba/",
+      "destination": "/locais/jardim-social/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-juveve-curitiba/",
+      "destination": "/locais/juveve/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-juveve-curitiba/",
+      "destination": "/locais/juveve/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-lamenha-pequena-curitiba/",
+      "destination": "/locais/lamenha-pequena/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-lamenha-pequena-curitiba/",
+      "destination": "/locais/lamenha-pequena/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-lindoia-curitiba/",
+      "destination": "/locais/lindoia/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-lindoia-curitiba/",
+      "destination": "/locais/lindoia/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-merces-curitiba/",
+      "destination": "/locais/merces/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-merces-curitiba/",
+      "destination": "/locais/merces/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-mossungue-ecoville-curitiba/",
+      "destination": "/locais/mossungue-ecoville/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-mossungue-ecoville-curitiba/",
+      "destination": "/locais/mossungue-ecoville/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-novo-mundo-curitiba/",
+      "destination": "/locais/novo-mundo/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-novo-mundo-curitiba/",
+      "destination": "/locais/novo-mundo/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-orleans-curitiba/",
+      "destination": "/locais/orleans/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-orleans-curitiba/",
+      "destination": "/locais/orleans/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-parolin-curitiba/",
+      "destination": "/locais/parolin/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-parolin-curitiba/",
+      "destination": "/locais/parolin/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-pilarzinho-curitiba/",
+      "destination": "/locais/pilarzinho/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-pilarzinho-curitiba/",
+      "destination": "/locais/pilarzinho/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-pinheirinho-curitiba/",
+      "destination": "/locais/pinheirinho/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-pinheirinho-curitiba/",
+      "destination": "/locais/pinheirinho/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-portao-curitiba/",
+      "destination": "/locais/portao/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-portao-curitiba/",
+      "destination": "/locais/portao/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-prado-velho-curitiba/",
+      "destination": "/locais/prado-velho/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-prado-velho-curitiba/",
+      "destination": "/locais/prado-velho/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-reboucas-curitiba/",
+      "destination": "/locais/reboucas/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-reboucas-curitiba/",
+      "destination": "/locais/reboucas/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-riviera-curitiba/",
+      "destination": "/locais/riviera/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-riviera-curitiba/",
+      "destination": "/locais/riviera/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-santa-candida-curitiba/",
+      "destination": "/locais/santa-candida/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-santa-candida-curitiba/",
+      "destination": "/locais/santa-candida/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-santa-felicidade-curitiba/",
+      "destination": "/locais/santa-felicidade/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-santa-felicidade-curitiba/",
+      "destination": "/locais/santa-felicidade/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-santa-quiteria-curitiba/",
+      "destination": "/locais/santa-quiteria/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-santa-quiteria-curitiba/",
+      "destination": "/locais/santa-quiteria/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-santo-inacio-curitiba/",
+      "destination": "/locais/santo-inacio/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-santo-inacio-curitiba/",
+      "destination": "/locais/santo-inacio/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-sao-braz-curitiba/",
+      "destination": "/locais/sao-braz/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-sao-braz-curitiba/",
+      "destination": "/locais/sao-braz/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-sao-francisco-curitiba/",
+      "destination": "/locais/sao-francisco/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-sao-francisco-curitiba/",
+      "destination": "/locais/sao-francisco/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-sao-joao-curitiba/",
+      "destination": "/locais/sao-joao/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-sao-joao-curitiba/",
+      "destination": "/locais/sao-joao/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-sao-lourenco-curitiba/",
+      "destination": "/locais/sao-lourenco/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-sao-lourenco-curitiba/",
+      "destination": "/locais/sao-lourenco/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-sao-miguel-curitiba/",
+      "destination": "/locais/sao-miguel/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-sao-miguel-curitiba/",
+      "destination": "/locais/sao-miguel/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-seminario-curitiba/",
+      "destination": "/locais/seminario/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-seminario-curitiba/",
+      "destination": "/locais/seminario/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-sitio-cercado-curitiba/",
+      "destination": "/locais/sitio-cercado/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-sitio-cercado-curitiba/",
+      "destination": "/locais/sitio-cercado/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-taboao-curitiba/",
+      "destination": "/locais/taboao/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-taboao-curitiba/",
+      "destination": "/locais/taboao/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-taruma-curitiba/",
+      "destination": "/locais/taruma/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-taruma-curitiba/",
+      "destination": "/locais/taruma/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-tatuquara-curitiba/",
+      "destination": "/locais/tatuquara/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-tatuquara-curitiba/",
+      "destination": "/locais/tatuquara/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-tingui-curitiba/",
+      "destination": "/locais/tingui/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-tingui-curitiba/",
+      "destination": "/locais/tingui/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-uberaba-curitiba/",
+      "destination": "/locais/uberaba/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-uberaba-curitiba/",
+      "destination": "/locais/uberaba/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-umbara-curitiba/",
+      "destination": "/locais/umbara/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-umbara-curitiba/",
+      "destination": "/locais/umbara/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-vila-izabel-curitiba/",
+      "destination": "/locais/vila-izabel/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-vila-izabel-curitiba/",
+      "destination": "/locais/vila-izabel/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-vista-alegre-curitiba/",
+      "destination": "/locais/vista-alegre/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-vista-alegre-curitiba/",
+      "destination": "/locais/vista-alegre/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-xaxim-curitiba/",
+      "destination": "/locais/xaxim/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-xaxim-curitiba/",
+      "destination": "/locais/xaxim/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-santa-felicidade-curitiba/",
+      "destination": "/locais/santa-felicidade/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-na-santa-felicidade/",
+      "destination": "/locais/santa-felicidade/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-sao-braz/",
+      "destination": "/locais/sao-braz/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-fazendinha-curitiba/",
+      "destination": "/locais/fazendinha/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-xaxim-curitiba/",
+      "destination": "/locais/xaxim/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-sitio-cercado-curitiba/",
+      "destination": "/locais/sitio-cercado/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-bairro-alto-curitiba/",
+      "destination": "/locais/bairro-alto/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-boqueirao-curitiba/",
+      "destination": "/locais/boqueirao/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-central-em-paranagua-24h/",
+      "destination": "/removido/",
+      "statusCode": 410
+    },
+    {
+      "source": "/melhor-desentupidora-emergencial-em-registro-sp-24h/",
+      "destination": "/removido/",
+      "statusCode": 410
+    },
+    {
+      "source": "/desentupidora-em-rio-negro-pr-24-horas/",
+      "destination": "/removido/",
+      "statusCode": 410
+    },
+    {
+      "source": "/desentupidora-itarare-sp-24-horas-atendimento-rapido-e-profissional/",
+      "destination": "/removido/",
+      "statusCode": 410
+    },
+    {
+      "source": "/desentupimento-de-esgoto-em-ponta-grossa-24-horas/",
+      "destination": "/removido/",
+      "statusCode": 410
+    },
+    {
+      "source": "/desentupidora-em-paranagua-24-horas/",
+      "destination": "/removido/",
+      "statusCode": 410
+    },
+    {
+      "source": "/desentupidora-urgente-em-registro/",
+      "destination": "/removido/",
+      "statusCode": 410
+    },
+    {
+      "source": "/desentupidora-paranagua/",
+      "destination": "/removido/",
+      "statusCode": 410
+    },
+    {
+      "source": "/desentupidora-lapa-parana/",
+      "destination": "/removido/",
+      "statusCode": 410
+    },
+    {
+      "source": "/desentupidora-ponta-grossa/",
+      "destination": "/removido/",
+      "statusCode": 410
+    },
+    {
+      "source": "/desentupidora-24-horas-em-sp/",
+      "destination": "/removido/",
+      "statusCode": 410
+    },
+    {
+      "source": "/desentupidora-registro-sp-2/",
+      "destination": "/removido/",
+      "statusCode": 410
+    },
+    {
+      "source": "/desentupidora-registro-sp/",
+      "destination": "/removido/",
+      "statusCode": 410
+    },
+    {
+      "source": "/desentupidora-em-registro-sp/",
+      "destination": "/removido/",
+      "statusCode": 410
+    },
+    {
+      "source": "/desentupidora-de-campinas/",
+      "destination": "/removido/",
+      "statusCode": 410
+    },
+    {
+      "source": "/desentupidora-de-vaso-campinas/",
+      "destination": "/removido/",
+      "statusCode": 410
+    },
+    {
+      "source": "/desentupidora-em-campo-largo/",
+      "destination": "/locais/campo-largo/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-em-campo-largo/",
+      "destination": "/locais/campo-largo/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-campo-largo/",
+      "destination": "/locais/campo-largo/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-em-campo-largo/",
+      "destination": "/locais/campo-largo/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupimento-de-esgoto-em-campo-largo/",
+      "destination": "/locais/campo-largo/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidoras-em-campo-largo/",
+      "destination": "/locais/campo-largo/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-campo-largo/",
+      "destination": "/locais/campo-largo/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-pinheirinho/",
+      "destination": "/locais/pinheirinho/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-fazenda-rio-grande/",
+      "destination": "/locais/fazenda-rio-grande/",
+      "permanent": true
+    },
+    {
+      "source": "/87541-2/",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}

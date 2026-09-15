@@ -1,0 +1,139 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SiteNav from '../../components/SiteNav.astro';
+import { resolveSiteUrl } from '../../lib/site-url';
+import { isOfficialServiceArea } from '../../lib/locations';
+import { buildBreadcrumbJsonLd } from '../../lib/schema-org';
+
+const locations = await getCollection('locations');
+const cities = locations
+  .filter((location) => location.data.locationType === 'cidade' && isOfficialServiceArea(location))
+  .sort((left, right) => left.data.title.localeCompare(right.data.title, 'pt-BR'));
+const neighborhoods = locations
+  .filter(
+    (location) =>
+      location.data.locationType === 'bairro' &&
+      location.data.parentLocationSlug === 'curitiba' &&
+      isOfficialServiceArea(location),
+  )
+  .sort((left, right) => left.data.title.localeCompare(right.data.title, 'pt-BR'));
+
+const settings = await getEntry('siteSettings', 'default');
+
+if (!settings) {
+  throw new Error('A entry siteSettings com id "default" não foi encontrada.');
+}
+
+const pageTitle = 'Áreas atendidas em Curitiba e região';
+const canonicalPath = '/locais';
+const siteUrl = resolveSiteUrl(settings.data.siteUrl);
+const jsonLd = [
+  buildBreadcrumbJsonLd(
+    [
+      { name: 'Início', path: '/' },
+      { name: 'Áreas atendidas', path: canonicalPath },
+    ],
+    siteUrl,
+  ),
+];
+---
+
+<BaseLayout
+  title={pageTitle}
+  description="Cidades da região metropolitana e bairros de Curitiba atendidos pela Desentupidora Central."
+  canonicalPath={canonicalPath}
+  jsonLd={jsonLd}
+>
+  <SiteNav />
+  <main class="index-page">
+    <h1>{pageTitle}</h1>
+
+    <section aria-labelledby="cidades-heading">
+      <h2 id="cidades-heading">Cidades</h2>
+      {
+        cities.length > 0 ? (
+          <ul class="index-page__list">
+            {cities.map((location) => (
+              <li>
+                <a class="index-card" href={`/locais/${location.data.slug}/`}>
+                  {location.data.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p>Nenhuma cidade publicada ainda.</p>
+        )
+      }
+    </section>
+
+    <section class="index-page__section" aria-labelledby="bairros-heading">
+      <h2 id="bairros-heading">Bairros de Curitiba</h2>
+      {
+        neighborhoods.length > 0 ? (
+          <ul class="index-page__list">
+            {neighborhoods.map((location) => (
+              <li>
+                <a class="index-card" href={`/locais/${location.data.slug}/`}>
+                  {location.data.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p>Nenhum bairro publicado ainda.</p>
+        )
+      }
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .index-page {
+    padding: var(--space-5) var(--space-4);
+    max-width: 48rem;
+  }
+
+  .index-page h1,
+  .index-page h2 {
+    font-family: var(--font-secondary);
+    color: var(--color-primary);
+  }
+
+  .index-page h1 {
+    margin-bottom: var(--space-4);
+  }
+
+  .index-page h2 {
+    margin-bottom: var(--space-3);
+  }
+
+  .index-page__section {
+    margin-top: var(--space-5);
+  }
+
+  .index-page__list {
+    display: grid;
+    gap: var(--space-2);
+    list-style: none;
+    padding: 0;
+  }
+
+  .index-card {
+    display: block;
+    padding: var(--space-3);
+    border: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
+    border-radius: var(--radius-md);
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .index-card:hover,
+  .index-card:focus-visible {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+  }
+</style>

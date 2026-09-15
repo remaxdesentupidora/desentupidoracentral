@@ -1,0 +1,61 @@
+---
+import { getEntry } from 'astro:content';
+import { resolveCtaHref } from '../../lib/whatsapp';
+
+interface Props {
+  heading: string;
+  body?: string;
+  buttonLabel: string;
+  buttonHref: string;
+  headingLevel?: 1 | 2;
+}
+
+const { heading, body, buttonLabel, buttonHref, headingLevel = 2 } = Astro.props;
+const HeadingTag = headingLevel === 1 ? 'h1' : 'h2';
+const settings = await getEntry('siteSettings', 'default');
+const resolvedHref = resolveCtaHref(buttonHref, settings?.data.organization.whatsappNumber);
+---
+
+<section class="cta">
+  <HeadingTag>{heading}</HeadingTag>
+  {body && <p>{body}</p>}
+  <a class="cta__button" href={resolvedHref}>{buttonLabel}</a>
+</section>
+
+<style>
+  .cta {
+    margin: var(--space-5) var(--space-4);
+    padding: var(--space-5);
+    background: var(--color-primary);
+    color: #fff;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+  }
+
+  .cta :is(h1, h2) {
+    font-family: var(--font-secondary);
+    margin-bottom: var(--space-2);
+    letter-spacing: var(--heading-letter-spacing);
+  }
+
+  .cta p {
+    margin-bottom: var(--space-3);
+    color: color-mix(in srgb, #fff 82%, transparent);
+  }
+
+  .cta__button {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    background: var(--color-accent);
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+  }
+
+  .cta__button:hover,
+  .cta__button:focus-visible {
+    filter: brightness(1.08);
+  }
+</style>

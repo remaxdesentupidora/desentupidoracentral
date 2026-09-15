@@ -1,0 +1,94 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SiteNav from '../../components/SiteNav.astro';
+import { resolveSiteUrl } from '../../lib/site-url';
+import { buildBreadcrumbJsonLd } from '../../lib/schema-org';
+
+const services = (await getCollection('services')).sort((left, right) =>
+  left.data.title.localeCompare(right.data.title, 'pt-BR'),
+);
+
+const settings = await getEntry('siteSettings', 'default');
+
+if (!settings) {
+  throw new Error('A entry siteSettings com id "default" não foi encontrada.');
+}
+
+const pageTitle = 'Desentupidora em Curitiba - Todos os Serviços';
+const canonicalPath = '/servicos';
+const siteUrl = resolveSiteUrl(settings.data.siteUrl);
+const jsonLd = [
+  buildBreadcrumbJsonLd(
+    [
+      { name: 'Início', path: '/' },
+      { name: 'Serviços', path: canonicalPath },
+    ],
+    siteUrl,
+  ),
+];
+---
+
+<BaseLayout
+  title={pageTitle}
+  description="Conheça todos os serviços da Desentupidora Central em Curitiba: ralo, pia, esgoto, vaso sanitário, fossa, caixa de gordura e hidrojateamento."
+  canonicalPath={canonicalPath}
+  jsonLd={jsonLd}
+>
+  <SiteNav />
+  <main class="index-page">
+    <h1>{pageTitle}</h1>
+    {
+      services.length > 0 ? (
+        <ul class="index-page__list">
+          {services.map((service) => (
+            <li>
+              <a class="index-card" href={`/servicos/${service.data.slug}/`}>
+                {service.data.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p>Nenhum serviço publicado ainda.</p>
+      )
+    }
+  </main>
+</BaseLayout>
+
+<style>
+  .index-page {
+    padding: var(--space-5) var(--space-4);
+    max-width: 48rem;
+  }
+
+  .index-page h1 {
+    font-family: var(--font-secondary);
+    color: var(--color-primary);
+    margin-bottom: var(--space-4);
+  }
+
+  .index-page__list {
+    display: grid;
+    gap: var(--space-2);
+    list-style: none;
+    padding: 0;
+  }
+
+  .index-card {
+    display: block;
+    padding: var(--space-3);
+    border: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
+    border-radius: var(--radius-md);
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .index-card:hover,
+  .index-card:focus-visible {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+  }
+</style>

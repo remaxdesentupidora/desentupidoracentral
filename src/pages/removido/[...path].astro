@@ -1,0 +1,48 @@
+---
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SiteNav from '../../components/SiteNav.astro';
+
+export const getStaticPaths = (() => [{ params: { path: undefined } }]) satisfies GetStaticPaths;
+
+Astro.response.status = 410;
+---
+
+<BaseLayout
+  title="Página não está mais disponível"
+  description="Esta página não está mais disponível. Atendemos apenas Curitiba e região metropolitana."
+  canonicalPath="/removido"
+>
+  <SiteNav />
+  <main class="gone">
+    <h1>Esta página não está mais disponível</h1>
+    <p>Atendemos apenas Curitiba e região metropolitana.</p>
+    <p>
+      <a href="/">Voltar ao início</a>
+    </p>
+  </main>
+</BaseLayout>
+
+<style>
+  .gone {
+    padding: var(--space-5) var(--space-4);
+    max-width: 42rem;
+  }
+
+  .gone h1 {
+    font-family: var(--font-secondary);
+    color: var(--color-primary);
+    margin-bottom: var(--space-3);
+  }
+
+  .gone p {
+    margin-bottom: var(--space-3);
+    line-height: 1.65;
+    color: var(--color-text);
+  }
+
+  .gone a {
+    color: var(--color-accent);
+    font-weight: 600;
+  }
+</style>

@@ -1,0 +1,71 @@
+[
+  {
+    "id": "default",
+    "siteName": "Site Exemplo",
+    "siteUrl": "https://exemplo.com.br",
+    "logo": {
+      "path": "/uploads/logo.svg",
+      "alt": "Logotipo do Site Exemplo"
+    },
+    "colors": {
+      "primary": "#d92d20",
+      "secondary": "#4B5563",
+      "accent": "#1fa855",
+      "background": "#FFFFFF",
+      "text": "#111827"
+    },
+    "fonts": {
+      "primaryFamily": "Inter",
+      "primaryWeights": [
+        400,
+        500,
+        600,
+        700
+      ],
+      "secondaryFamily": "Source Serif 4",
+      "secondaryWeights": [
+        400,
+        600
+      ]
+    },
+    "socialLinks": [
+      {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/exemplo"
+      },
+      {
+        "platform": "linkedin",
+        "url": "https://www.linkedin.com/company/exemplo"
+      }
+    ],
+    "theme": "modern",
+    "organization": {
+      "name": "Desentupidora Central",
+      "legalName": "Desentupidora Central",
+      "logo": "https://exemplo.com.br/uploads/logo.svg",
+      "sameAs": [
+        "https://www.instagram.com/exemplo",
+        "https://www.linkedin.com/company/exemplo"
+      ],
+      "telephone": "+55 41 98811-9944",
+      "whatsappNumber": "5541988119944",
+      "areaServed": [
+        "Curitiba",
+        "Almirante Tamandaré",
+        "Araucária",
+        "Campina Grande do Sul",
+        "Colombo",
+        "Contenda",
+        "Fazenda Rio Grande",
+        "Itaperuçu",
+        "Mandirituba",
+        "Pinhais",
+        "Piraquara",
+        "Quatro Barras",
+        "Quitandinha",
+        "São José dos Pinhais",
+        "Tijucas do Sul"
+      ]
+    }
+  }
+]

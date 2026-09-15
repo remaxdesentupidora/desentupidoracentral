@@ -1,0 +1,58 @@
+---
+import type { FaqItem } from '../../lib/schema-org';
+import FaqAccordionItem from './FaqAccordionItem.astro';
+import FaqJsonLd from './FaqJsonLd.astro';
+
+interface Props {
+  heading?: string;
+  items: FaqItem[];
+  headingLevel?: 1 | 2;
+}
+
+const { heading, items, headingLevel = 2 } = Astro.props;
+const HeadingTag = headingLevel === 1 ? 'h1' : 'h2';
+---
+
+<section class="faq-sticky">
+  <div class="faq-sticky__aside">
+    {heading && <HeadingTag>{heading}</HeadingTag>}
+  </div>
+  <div class="faq-sticky__list">
+    {items.map((item) => <FaqAccordionItem question={item.question} answer={item.answer} />)}
+  </div>
+</section>
+
+<FaqJsonLd items={items} />
+
+<style>
+  .faq-sticky {
+    display: grid;
+    gap: var(--space-4);
+    padding: var(--space-5) var(--space-4);
+  }
+
+  .faq-sticky :is(h1, h2) {
+    font-family: var(--font-secondary);
+    letter-spacing: var(--heading-letter-spacing);
+    color: var(--color-primary);
+  }
+
+  .faq-sticky__list {
+    display: grid;
+    gap: var(--space-2);
+    min-width: 0;
+  }
+
+  @media (min-width: 768px) {
+    .faq-sticky {
+      grid-template-columns: minmax(0, 3fr) minmax(0, 7fr);
+      align-items: start;
+      gap: var(--space-5);
+    }
+
+    .faq-sticky__aside {
+      position: sticky;
+      top: var(--space-4);
+    }
+  }
+</style>

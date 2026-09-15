@@ -1,0 +1,42 @@
+---
+import type { FaqItem } from '../../lib/schema-org';
+import FaqAccordionItem from './FaqAccordionItem.astro';
+import FaqJsonLd from './FaqJsonLd.astro';
+
+interface Props {
+  heading?: string;
+  items: FaqItem[];
+  headingLevel?: 1 | 2;
+}
+
+const { heading, items, headingLevel = 2 } = Astro.props;
+const HeadingTag = headingLevel === 1 ? 'h1' : 'h2';
+---
+
+<section class="faq-block">
+  {heading && <HeadingTag>{heading}</HeadingTag>}
+  <div class="faq-block__list">
+    {items.map((item) => <FaqAccordionItem question={item.question} answer={item.answer} />)}
+  </div>
+</section>
+
+<FaqJsonLd items={items} />
+
+<style>
+  .faq-block {
+    padding: var(--space-5) var(--space-4);
+    max-width: 42rem;
+  }
+
+  .faq-block :is(h1, h2) {
+    font-family: var(--font-secondary);
+    margin-bottom: var(--space-3);
+    letter-spacing: var(--heading-letter-spacing);
+    color: var(--color-primary);
+  }
+
+  .faq-block__list {
+    display: grid;
+    gap: var(--space-2);
+  }
+</style>

@@ -1,0 +1,89 @@
+---
+import { Marked } from 'marked';
+
+interface Props {
+  heading?: string;
+  body: string;
+  headingLevel?: 1 | 2;
+  layout?: 'simple' | 'centered';
+}
+
+const { heading, body, headingLevel = 2, layout = 'simple' } = Astro.props;
+const HeadingTag = headingLevel === 1 ? 'h1' : 'h2';
+const isCentered = layout === 'centered';
+
+const markdown = new Marked({
+  renderer: {
+    html() {
+      return '';
+    },
+    heading({ text, depth }) {
+      const level = Math.min(depth + 2, 6);
+      return `<h${level}>${text}</h${level}>`;
+    },
+  },
+});
+
+const html = markdown.parse(body, { async: false });
+---
+
+<section class:list={['text-block', isCentered && 'text-block--centered']}>
+  <div class="text-block__copy">
+    {heading && <HeadingTag class="text-block__heading">{heading}</HeadingTag>}
+    <div class="text-block__body prose" set:html={html} />
+  </div>
+</section>
+
+<style>
+  .text-block {
+    padding: var(--space-5) var(--space-4);
+  }
+
+  .text-block:not(.text-block--centered) .text-block__copy {
+    max-width: 42rem;
+  }
+
+  .text-block__heading {
+    font-family: var(--font-secondary);
+    margin-bottom: var(--space-2);
+    letter-spacing: var(--heading-letter-spacing);
+    color: var(--color-primary);
+  }
+
+  .text-block__body :global(a) {
+    color: var(--color-accent);
+  }
+
+  .text-block--centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: var(--space-6) var(--space-4);
+    text-align: center;
+  }
+
+  .text-block--centered .text-block__copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(46rem, 100%);
+    text-align: center;
+  }
+
+  .text-block--centered .text-block__heading {
+    width: 100%;
+    margin-bottom: var(--space-3);
+    font-size: clamp(1.9rem, 4.4vw, 3.15rem);
+    line-height: 1.15;
+    text-align: center;
+  }
+
+  .text-block--centered .text-block__body {
+    width: min(38rem, 100%);
+  }
+
+  .text-block--centered .text-block__body :global(p) {
+    text-align: center;
+  }
+</style>

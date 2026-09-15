@@ -1,0 +1,89 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  services: CollectionEntry<'services'>[];
+  locationName: string;
+}
+
+const { services, locationName } = Astro.props;
+const headingId = 'related-services-heading';
+---
+
+{
+  services.length > 0 ? (
+    <section class="related-services" aria-labelledby={headingId}>
+      <h2 id={headingId}>Serviços mais buscados em {locationName}</h2>
+      <ul class="related-services__list">
+        {services.map((service) => (
+          <li>
+            <a class="related-services__card" href={`/servicos/${service.data.slug}/`}>
+              <span class="related-services__title">{service.data.title}</span>
+              <span class="related-services__more">Ver serviço</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ) : null
+}
+
+<style>
+  .related-services {
+    padding: var(--space-5) var(--space-4);
+  }
+
+  .related-services h2 {
+    font-family: var(--font-secondary);
+    margin-bottom: var(--space-3);
+    letter-spacing: var(--heading-letter-spacing);
+    color: var(--color-primary);
+  }
+
+  .related-services__list {
+    display: grid;
+    gap: var(--space-3);
+    list-style: none;
+    padding: 0;
+  }
+
+  @media (min-width: 768px) {
+    .related-services__list {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  .related-services__card {
+    display: grid;
+    gap: var(--space-1);
+    height: 100%;
+    padding: var(--space-3);
+    border: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
+    border-radius: var(--radius-md);
+    background: var(--color-background);
+    box-shadow: var(--shadow-sm);
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .related-services__card:hover,
+  .related-services__card:focus-visible {
+    border-color: var(--color-accent);
+  }
+
+  .related-services__title {
+    font-weight: 700;
+    color: var(--color-primary);
+  }
+
+  .related-services__card:hover .related-services__title,
+  .related-services__card:focus-visible .related-services__title {
+    color: var(--color-accent);
+  }
+
+  .related-services__more {
+    margin-top: var(--space-1);
+    font-weight: 600;
+    color: var(--color-accent);
+  }
+</style>

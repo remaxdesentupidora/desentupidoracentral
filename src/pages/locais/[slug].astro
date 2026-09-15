@@ -1,0 +1,190 @@
+---
+import type { GetStaticPaths } from 'astro';
+import type { CollectionEntry } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SiteNav from '../../components/SiteNav.astro';
+import Hero from '../../components/blocks/Hero.astro';
+import TextBlock from '../../components/blocks/TextBlock.astro';
+import Gallery from '../../components/blocks/Gallery.astro';
+import CtaBlock from '../../components/blocks/CtaBlock.astro';
+import RecentArticles from '../../components/blocks/RecentArticles.astro';
+import FaqBlock from '../../components/blocks/FaqBlock.astro';
+import ServiceGrid from '../../components/blocks/ServiceGrid.astro';
+import LocationGrid from '../../components/blocks/LocationGrid.astro';
+import FeatureBanner from '../../components/blocks/FeatureBanner.astro';
+import RelatedServices from '../../components/RelatedServices.astro';
+import { resolveSiteUrl } from '../../lib/site-url';
+import { buildBreadcrumbJsonLd, buildLocalBusinessJsonLd } from '../../lib/schema-org';
+
+export const getStaticPaths = (async () => {
+  const locations = await getCollection('locations');
+  const locationBySlug = new Map(locations.map((location) => [location.data.slug, location]));
+
+  return locations.map((entry) => {
+    const parent =
+      entry.data.locationType === 'bairro' && entry.data.parentLocationSlug
+        ? (locationBySlug.get(entry.data.parentLocationSlug) ?? null)
+        : null;
+
+    return {
+      params: { slug: entry.data.slug },
+      props: { entry, parent },
+    };
+  });
+}) satisfies GetStaticPaths;
+
+interface Props {
+  entry: CollectionEntry<'locations'>;
+  parent: CollectionEntry<'locations'> | null;
+}
+
+const { entry, parent } = Astro.props;
+const firstHeroIndex = entry.data.blocks.findIndex((block) => block.type === 'hero');
+const canonicalPath = `/locais/${entry.data.slug}`;
+const settings = await getEntry('siteSettings', 'default');
+
+if (!settings) {
+  throw new Error('A entry siteSettings com id "default" não foi encontrada.');
+}
+
+const relatedSlugs = entry.data.relatedServiceSlugs ?? [];
+const servicesBySlug = new Map(
+  relatedSlugs.length > 0
+    ? (await getCollection('services')).map((service) => [service.data.slug, service])
+    : [],
+);
+const relatedServices = relatedSlugs
+  .map((slug) => servicesBySlug.get(slug))
+  .filter((service): service is CollectionEntry<'services'> => service !== undefined);
+const lastCtaIndex = entry.data.blocks.findLastIndex((block) => block.type === 'cta');
+const locationName = entry.data.title.replace(/^Desentupidora\s+(em|no|na)\s+/i, '').trim() || entry.data.title;
+
+const siteUrl = resolveSiteUrl(settings.data.siteUrl);
+const breadcrumbItems =
+  entry.data.locationType === 'bairro' && parent
+    ? [
+        { name: 'Início', path: '/' },
+        { name: parent.data.title, path: `/locais/${parent.data.slug}` },
+        { name: entry.data.title, path: canonicalPath },
+      ]
+    : [
+        { name: 'Início', path: '/' },
+        { name: entry.data.title, path: canonicalPath },
+      ];
+
+const jsonLd = [
+  buildLocalBusinessJsonLd(settings.data, entry),
+  buildBreadcrumbJsonLd(breadcrumbItems, siteUrl),
+].filter((item): item is Record<string, unknown> => item !== null);
+---
+
+<BaseLayout
+  title={entry.data.seoTitle}
+  description={entry.data.metaDescription}
+  ogImage={entry.data.ogImage}
+  canonicalPath={canonicalPath}
+  jsonLd={jsonLd}
+>
+  <SiteNav />
+  <main>
+    <h1 class="page-title">{entry.data.title}</h1>
+    {
+      entry.data.blocks.map((block, index) => {
+        const rendered = (() => {
+          switch (block.type) {
+            case 'hero':
+              return (
+                <Hero
+                  layout={block.layout}
+                  badge={block.badge}
+                  heading={block.heading}
+                  subheading={block.subheading}
+                  image={block.image}
+                  alt={block.alt}
+                  overlayImage={block.overlayImage}
+                  overlayAlt={block.overlayAlt}
+                  checklist={block.checklist}
+                  cta={block.cta}
+                  headingLevel={2}
+                  imagePriority={index === firstHeroIndex}
+                />
+              );
+            case 'text':
+              return (
+                <TextBlock
+                  layout={block.layout}
+                  heading={block.heading}
+                  body={block.body}
+                  headingLevel={2}
+                />
+              );
+            case 'gallery':
+              return <Gallery images={block.images} />;
+            case 'cta':
+              return (
+                <CtaBlock
+                  heading={block.heading}
+                  body={block.body}
+                  buttonLabel={block.buttonLabel}
+                  buttonHref={block.buttonHref}
+                  headingLevel={2}
+                />
+              );
+            case 'recentArticles':
+              return <RecentArticles heading={block.heading} count={block.count} />;
+            case 'faq':
+              return <FaqBlock heading={block.heading} items={block.items} headingLevel={2} />;
+            case 'serviceGrid':
+              return <ServiceGrid heading={block.heading} headingLevel={2} />;
+            case 'locationGrid':
+              return (
+                <LocationGrid
+                  heading={block.heading}
+                  locationType={block.locationType}
+                  headingLevel={2}
+                />
+              );
+            case 'featureBanner':
+              return (
+                <FeatureBanner
+                  heading={block.heading}
+                  image={block.image}
+                  imageAlt={block.imageAlt}
+                  items={block.items}
+                  headingLevel={2}
+                />
+              );
+            default:
+              return null;
+          }
+        })();
+
+        return (
+          <>
+            {relatedServices.length > 0 && index === lastCtaIndex ? (
+              <RelatedServices services={relatedServices} locationName={locationName} />
+            ) : null}
+            {rendered}
+          </>
+        );
+      })
+    }
+    {
+      relatedServices.length > 0 && lastCtaIndex < 0 ? (
+        <RelatedServices services={relatedServices} locationName={locationName} />
+      ) : null
+    }
+  </main>
+</BaseLayout>
+
+<style>
+  .page-title {
+    padding: var(--space-4) var(--space-4) 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+  }
+</style>

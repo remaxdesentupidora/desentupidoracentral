@@ -1,0 +1,158 @@
+---
+import type { GetStaticPaths } from 'astro';
+import type { CollectionEntry } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SiteNav from '../../components/SiteNav.astro';
+import Hero from '../../components/blocks/Hero.astro';
+import TextBlock from '../../components/blocks/TextBlock.astro';
+import Gallery from '../../components/blocks/Gallery.astro';
+import CtaBlock from '../../components/blocks/CtaBlock.astro';
+import RecentArticles from '../../components/blocks/RecentArticles.astro';
+import FaqSticky from '../../components/blocks/FaqSticky.astro';
+import ServiceGrid from '../../components/blocks/ServiceGrid.astro';
+import LocationGrid from '../../components/blocks/LocationGrid.astro';
+import FeatureBanner from '../../components/blocks/FeatureBanner.astro';
+import RelatedArticles from '../../components/RelatedArticles.astro';
+import { resolveSiteUrl } from '../../lib/site-url';
+import {
+  buildBreadcrumbJsonLd,
+  buildLocalBusinessJsonLd,
+  buildServiceJsonLd,
+} from '../../lib/schema-org';
+
+export const getStaticPaths = (async () => {
+  const services = await getCollection('services');
+
+  return services.map((entry) => ({
+    params: { slug: entry.data.slug },
+    props: { entry },
+  }));
+}) satisfies GetStaticPaths;
+
+interface Props {
+  entry: CollectionEntry<'services'>;
+}
+
+const { entry } = Astro.props;
+const firstHeroIndex = entry.data.blocks.findIndex((block) => block.type === 'hero');
+const canonicalPath = `/servicos/${entry.data.slug}`;
+const settings = await getEntry('siteSettings', 'default');
+
+if (!settings) {
+  throw new Error('A entry siteSettings com id "default" não foi encontrada.');
+}
+
+const relatedArticles = (await getCollection('articles'))
+  .filter((article) => article.data.relatedServiceSlug === entry.data.slug)
+  .sort((left, right) => right.data.publishedDate.valueOf() - left.data.publishedDate.valueOf());
+
+const siteUrl = resolveSiteUrl(settings.data.siteUrl);
+const providerName = settings.data.organization.legalName ?? settings.data.siteName;
+const jsonLd = [
+  buildServiceJsonLd(entry, siteUrl, providerName),
+  buildLocalBusinessJsonLd(settings.data),
+  buildBreadcrumbJsonLd(
+    [
+      { name: 'Início', path: '/' },
+      { name: entry.data.title, path: canonicalPath },
+    ],
+    siteUrl,
+  ),
+].filter((item): item is Record<string, unknown> => item !== null);
+---
+
+<BaseLayout
+  title={entry.data.seoTitle}
+  description={entry.data.metaDescription}
+  ogImage={entry.data.ogImage}
+  canonicalPath={canonicalPath}
+  jsonLd={jsonLd}
+>
+  <SiteNav />
+  <main>
+    <h1 class="page-title">{entry.data.title}</h1>
+    {
+      entry.data.blocks.map((block, index) => {
+        switch (block.type) {
+          case 'hero':
+            return (
+              <Hero
+                layout={block.layout}
+                badge={block.badge}
+                heading={block.heading}
+                subheading={block.subheading}
+                image={block.image}
+                alt={block.alt}
+                overlayImage={block.overlayImage}
+                overlayAlt={block.overlayAlt}
+                checklist={block.checklist}
+                cta={block.cta}
+                headingLevel={2}
+                imagePriority={index === firstHeroIndex}
+              />
+            );
+          case 'text':
+            return (
+              <TextBlock
+                layout={block.layout}
+                heading={block.heading}
+                body={block.body}
+                headingLevel={2}
+              />
+            );
+          case 'gallery':
+            return <Gallery images={block.images} />;
+          case 'cta':
+            return (
+              <CtaBlock
+                heading={block.heading}
+                body={block.body}
+                buttonLabel={block.buttonLabel}
+                buttonHref={block.buttonHref}
+                headingLevel={2}
+              />
+            );
+          case 'recentArticles':
+            return <RecentArticles heading={block.heading} count={block.count} />;
+          case 'faq':
+            return <FaqSticky heading={block.heading} items={block.items} headingLevel={2} />;
+          case 'serviceGrid':
+            return <ServiceGrid heading={block.heading} headingLevel={2} />;
+          case 'locationGrid':
+            return (
+              <LocationGrid
+                heading={block.heading}
+                locationType={block.locationType}
+                headingLevel={2}
+              />
+            );
+          case 'featureBanner':
+            return (
+              <FeatureBanner
+                heading={block.heading}
+                image={block.image}
+                imageAlt={block.imageAlt}
+                items={block.items}
+                headingLevel={2}
+              />
+            );
+          default:
+            return null;
+        }
+      })
+    }
+    {relatedArticles.length > 0 ? <RelatedArticles articles={relatedArticles} /> : null}
+  </main>
+</BaseLayout>
+
+<style>
+  .page-title {
+    padding: var(--space-4) var(--space-4) 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+  }
+</style>

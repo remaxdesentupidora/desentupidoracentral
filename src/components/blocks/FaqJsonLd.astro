@@ -1,0 +1,12 @@
+---
+import { buildFaqPageJsonLd, type FaqItem } from '../../lib/schema-org';
+
+interface Props {
+  items: FaqItem[];
+}
+
+const { items } = Astro.props;
+const faqJsonLd = buildFaqPageJsonLd(items);
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} />

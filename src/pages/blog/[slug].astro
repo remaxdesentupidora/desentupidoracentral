@@ -1,0 +1,244 @@
+---
+import type { GetStaticPaths } from 'astro';
+import type { CollectionEntry } from 'astro:content';
+import { getCollection, getEntry, render } from 'astro:content';
+import { Image } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SiteNav from '../../components/SiteNav.astro';
+import { resolveSiteUrl, toAbsoluteUrl } from '../../lib/site-url';
+
+export const getStaticPaths = (async () => {
+  const articles = await getCollection('articles');
+
+  return articles.map((entry) => ({
+    params: { slug: entry.data.slug },
+    props: { entry },
+  }));
+}) satisfies GetStaticPaths;
+
+interface Props {
+  entry: CollectionEntry<'articles'>;
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const settings = await getEntry('siteSettings', 'default');
+
+if (!settings) {
+  throw new Error('A entry siteSettings com id "default" não foi encontrada.');
+}
+
+const relatedService = entry.data.relatedServiceSlug
+  ? await getEntry('services', entry.data.relatedServiceSlug)
+  : undefined;
+
+const siteUrl = resolveSiteUrl(settings.data.siteUrl);
+const articleUrl = toAbsoluteUrl(`/blog/${entry.data.slug}/`, siteUrl);
+
+const blogPostingJsonLd: Record<string, unknown> = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: entry.data.title,
+  image: toAbsoluteUrl(entry.data.featuredImage.src.src, siteUrl),
+  datePublished: entry.data.publishedDate.toISOString(),
+  author: {
+    '@type': 'Person',
+    name: entry.data.author,
+  },
+};
+
+if (entry.data.updatedDate) {
+  blogPostingJsonLd.dateModified = entry.data.updatedDate.toISOString();
+}
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Início',
+      item: siteUrl,
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Blog',
+      item: toAbsoluteUrl('/blog/', siteUrl),
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: entry.data.title,
+      item: articleUrl,
+    },
+  ],
+};
+---
+
+<BaseLayout
+  title={entry.data.seoTitle}
+  description={entry.data.metaDescription}
+  ogImage={entry.data.ogImage}
+  canonicalPath={`/blog/${entry.data.slug}`}
+>
+  <SiteNav />
+  <article class="article">
+    <header>
+      <h1>{entry.data.title}</h1>
+      <p class="article__meta">
+        <span>{entry.data.author}</span>
+        <time datetime={entry.data.publishedDate.toISOString()}>
+          {entry.data.publishedDate.toLocaleDateString('pt-BR', { timeZone: 'UTC' })}
+        </time>
+      </p>
+    </header>
+    <figure class="article__featured">
+      <Image
+        src={entry.data.featuredImage.src}
+        alt={entry.data.featuredImage.alt}
+        format="webp"
+        quality="mid"
+        loading="eager"
+        fetchpriority="high"
+      />
+      {
+        entry.data.featuredImage.credit ? (
+          <figcaption class="article__featured-credit">{entry.data.featuredImage.credit}</figcaption>
+        ) : null
+      }
+    </figure>
+    <div class="article__body prose">
+      <Content />
+    </div>
+    {
+      relatedService ? (
+        <aside class="related-service" aria-labelledby="related-service-heading">
+          <h2 id="related-service-heading">Sobre este serviço</h2>
+          <a class="related-service__card" href={`/servicos/${relatedService.data.slug}/`}>
+            <span class="related-service__title">{relatedService.data.title}</span>
+            <span class="related-service__more">Ver serviço</span>
+          </a>
+        </aside>
+      ) : null
+    }
+    {
+      entry.data.tags && entry.data.tags.length > 0 && (
+        <footer>
+          <h2 class="article__tags-title">Tags</h2>
+          <ul class="article__tags">
+            {entry.data.tags.map((tag) => (
+              <li>
+                <a href="#" rel="tag">
+                  {tag}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </footer>
+      )
+    }
+  </article>
+  <script type="application/ld+json" set:html={JSON.stringify(blogPostingJsonLd)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
+</BaseLayout>
+
+<style>
+  .article {
+    padding: var(--space-5) var(--space-4) var(--space-6);
+    max-width: 42rem;
+    margin: 0 auto;
+  }
+
+  .article h1 {
+    font-family: var(--font-secondary);
+    color: var(--color-primary);
+    line-height: 1.2;
+  }
+
+  .article__meta {
+    display: flex;
+    gap: var(--space-2);
+    margin-top: var(--space-2);
+    color: var(--color-secondary);
+    font-size: 0.9375rem;
+  }
+
+  .article__featured {
+    margin: var(--space-4) 0;
+  }
+
+  .article__featured :global(img) {
+    width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+  }
+
+  .article__featured-credit {
+    margin-top: 0.4rem;
+    font-size: 0.75rem;
+    color: var(--color-secondary);
+  }
+
+  .related-service {
+    margin-top: var(--space-5);
+  }
+
+  .related-service h2 {
+    font-family: var(--font-secondary);
+    font-size: 1.25rem;
+    margin-bottom: var(--space-2);
+    letter-spacing: var(--heading-letter-spacing);
+    color: var(--color-primary);
+  }
+
+  .related-service__card {
+    display: grid;
+    gap: var(--space-1);
+    padding: var(--space-3);
+    border: 1px solid color-mix(in srgb, var(--color-accent) 35%, transparent);
+    border-radius: var(--radius-md);
+    background: color-mix(in srgb, var(--color-accent) 8%, var(--color-background));
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .related-service__card:hover,
+  .related-service__card:focus-visible {
+    border-color: var(--color-accent);
+  }
+
+  .related-service__title {
+    font-weight: 700;
+    color: var(--color-primary);
+  }
+
+  .related-service__more {
+    font-weight: 600;
+    color: var(--color-accent);
+  }
+
+  .article__tags-title {
+    margin-top: var(--space-5);
+    font-size: 1rem;
+  }
+
+  .article__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-top: var(--space-2);
+    list-style: none;
+    padding: 0;
+  }
+
+  .article__tags a {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border: 1px solid color-mix(in srgb, var(--color-text) 18%, transparent);
+    border-radius: 999px;
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+</style>

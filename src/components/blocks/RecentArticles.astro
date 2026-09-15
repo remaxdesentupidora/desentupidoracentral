@@ -1,0 +1,127 @@
+---
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+
+interface Props {
+  heading?: string;
+  count?: number;
+}
+
+const { heading, count = 3 } = Astro.props;
+const CardHeading = heading ? 'h3' : 'h2';
+
+const articles = (await getCollection('articles'))
+  .sort((left, right) => right.data.publishedDate.valueOf() - left.data.publishedDate.valueOf())
+  .slice(0, count);
+---
+
+{
+  articles.length > 0 ? (
+    <section class="recent-articles" aria-label={heading ? undefined : 'Artigos recentes'}>
+      {heading ? <h2>{heading}</h2> : null}
+      <div class="recent-articles__grid">
+        {articles.map((article) => (
+          <article class="recent-articles__card">
+            <a href={`/blog/${article.data.slug}`}>
+              <figure class="recent-articles__cover">
+                <Image
+                  src={article.data.featuredImage.src}
+                  alt={article.data.featuredImage.alt}
+                  format="webp"
+                  quality="mid"
+                  loading="lazy"
+                  widths={[400, 720]}
+                  sizes="(min-width: 960px) 30vw, (min-width: 640px) 45vw, 100vw"
+                />
+                {
+                  article.data.featuredImage.credit ? (
+                    <figcaption class="recent-articles__credit">{article.data.featuredImage.credit}</figcaption>
+                  ) : null
+                }
+              </figure>
+              <CardHeading>{article.data.title}</CardHeading>
+            </a>
+            <p>{article.data.excerpt}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  ) : null
+}
+
+<style>
+  .recent-articles {
+    padding: var(--space-5) var(--space-4);
+  }
+
+  .recent-articles h2 {
+    font-family: var(--font-secondary);
+    margin-bottom: var(--space-4);
+    letter-spacing: var(--heading-letter-spacing);
+    color: var(--color-primary);
+  }
+
+  .recent-articles__grid {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  @media (min-width: 640px) {
+    .recent-articles__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 960px) {
+    .recent-articles__grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  .recent-articles__card {
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    background: var(--color-background);
+  }
+
+  .recent-articles__card a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .recent-articles__card :is(h2, h3) {
+    margin-top: var(--space-2);
+    padding-inline: var(--space-2);
+    letter-spacing: var(--heading-letter-spacing);
+    color: var(--color-primary);
+  }
+
+  .recent-articles__card a:hover :is(h2, h3),
+  .recent-articles__card a:focus-visible :is(h2, h3) {
+    color: var(--color-accent);
+  }
+
+  .recent-articles__card p {
+    margin-top: var(--space-1);
+    margin-bottom: var(--space-2);
+    padding-inline: var(--space-2);
+    color: var(--color-secondary);
+  }
+
+  .recent-articles__cover {
+    margin: 0;
+  }
+
+  .recent-articles__card :global(img) {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+  }
+
+  .recent-articles__credit {
+    margin: 0.35rem var(--space-2) 0;
+    font-size: 0.75rem;
+    color: var(--color-secondary);
+  }
+</style>
