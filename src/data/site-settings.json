@@ -2,7 +2,7 @@
   {
     "id": "default",
     "siteName": "Desentupidora Central",
-    "siteUrl": "https://exemplo.com.br",
+    "siteUrl": "https://desentupidoracentral.com.br",
     "logo": {
       "path": "/uploads/logo.svg",
       "alt": "Desentupidora Central"
@@ -42,7 +42,7 @@
     "organization": {
       "name": "Desentupidora Central",
       "legalName": "Desentupidora Central",
-      "logo": "https://exemplo.com.br/uploads/logo.svg",
+      "logo": "https://desentupidoracentral.com.br/uploads/logo.svg",
       "sameAs": [
         "https://www.instagram.com/exemplo",
         "https://www.linkedin.com/company/exemplo"
