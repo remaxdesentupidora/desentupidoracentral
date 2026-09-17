@@ -15,7 +15,9 @@ import LocationGrid from '../../components/blocks/LocationGrid.astro';
 import FeatureBanner from '../../components/blocks/FeatureBanner.astro';
 import RelatedServices from '../../components/RelatedServices.astro';
 import NearbyBairros from '../../components/NearbyBairros.astro';
+import PageSplit from '../../components/PageSplit.astro';
 import { resolveSiteUrl } from '../../lib/site-url';
+import { groupContentBlocks } from '../../lib/group-content-blocks';
 import { buildBreadcrumbJsonLd, buildLocalBusinessJsonLd } from '../../lib/schema-org';
 
 function neighborhoodLabel(location: CollectionEntry<'locations'>): string {
@@ -53,6 +55,7 @@ const { entry, parent } = Astro.props;
 const locations = await getCollection('locations');
 const current = locations.find((location) => location.data.slug === entry.data.slug) ?? entry;
 const firstHeroIndex = current.data.blocks.findIndex((block) => block.type === 'hero');
+const groupedBlocks = groupContentBlocks(current.data.blocks);
 const canonicalPath = `/locais/${current.data.slug}`;
 const settings = await getEntry('siteSettings', 'default');
 
@@ -121,7 +124,27 @@ const jsonLd = [
   <main>
     <h1 class="page-title">{current.data.title}</h1>
     {
-      current.data.blocks.map((block, index) => {
+      groupedBlocks.map((item) => {
+        if (item.kind === 'text-group') {
+          return (
+            <PageSplit>
+              {item.blocks.map((block) =>
+                block.type === 'text' ? (
+                  <TextBlock
+                    nested
+                    layout={block.layout}
+                    heading={block.heading}
+                    body={block.body}
+                    headingLevel={2}
+                  />
+                ) : null,
+              )}
+            </PageSplit>
+          );
+        }
+
+        const { block, index } = item;
+
         const rendered = (() => {
           switch (block.type) {
             case 'hero':
@@ -225,6 +248,8 @@ const jsonLd = [
 
 <style>
   .page-title {
+    max-width: var(--page-max);
+    margin-inline: auto;
     padding: var(--space-4) var(--space-4) 0;
     font-size: 0.875rem;
     font-weight: 600;
@@ -234,6 +259,8 @@ const jsonLd = [
   }
 
   .location-population {
+    max-width: var(--page-max);
+    margin-inline: auto;
     padding: var(--space-2) var(--space-4) 0;
     font-size: 0.9375rem;
     color: var(--color-secondary);

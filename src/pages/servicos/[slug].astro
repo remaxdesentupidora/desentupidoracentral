@@ -14,7 +14,9 @@ import ServiceGrid from '../../components/blocks/ServiceGrid.astro';
 import LocationGrid from '../../components/blocks/LocationGrid.astro';
 import FeatureBanner from '../../components/blocks/FeatureBanner.astro';
 import RelatedArticles from '../../components/RelatedArticles.astro';
+import PageSplit from '../../components/PageSplit.astro';
 import { resolveSiteUrl } from '../../lib/site-url';
+import { groupContentBlocks } from '../../lib/group-content-blocks';
 import {
   buildBreadcrumbJsonLd,
   buildLocalBusinessJsonLd,
@@ -36,6 +38,7 @@ interface Props {
 
 const { entry } = Astro.props;
 const firstHeroIndex = entry.data.blocks.findIndex((block) => block.type === 'hero');
+const groupedBlocks = groupContentBlocks(entry.data.blocks);
 const canonicalPath = `/servicos/${entry.data.slug}`;
 const settings = await getEntry('siteSettings', 'default');
 
@@ -73,7 +76,27 @@ const jsonLd = [
   <main>
     <h1 class="page-title">{entry.data.title}</h1>
     {
-      entry.data.blocks.map((block, index) => {
+      groupedBlocks.map((item) => {
+        if (item.kind === 'text-group') {
+          return (
+            <PageSplit>
+              {item.blocks.map((block) =>
+                block.type === 'text' ? (
+                  <TextBlock
+                    nested
+                    layout={block.layout}
+                    heading={block.heading}
+                    body={block.body}
+                    headingLevel={2}
+                  />
+                ) : null,
+              )}
+            </PageSplit>
+          );
+        }
+
+        const { block, index } = item;
+
         switch (block.type) {
           case 'hero':
             return (
@@ -148,6 +171,8 @@ const jsonLd = [
 
 <style>
   .page-title {
+    max-width: var(--page-max);
+    margin-inline: auto;
     padding: var(--space-4) var(--space-4) 0;
     font-size: 0.875rem;
     font-weight: 600;

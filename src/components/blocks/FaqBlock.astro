@@ -24,8 +24,9 @@ const HeadingTag = headingLevel === 1 ? 'h1' : 'h2';
 
 <style>
   .faq-block {
+    max-width: var(--page-max);
+    margin-inline: auto;
     padding: var(--space-5) var(--space-4);
-    max-width: 42rem;
   }
 
   .faq-block :is(h1, h2) {

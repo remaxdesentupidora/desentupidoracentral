@@ -6,9 +6,10 @@ interface Props {
   body: string;
   headingLevel?: 1 | 2;
   layout?: 'simple' | 'centered';
+  nested?: boolean;
 }
 
-const { heading, body, headingLevel = 2, layout = 'simple' } = Astro.props;
+const { heading, body, headingLevel = 2, layout = 'simple', nested = false } = Astro.props;
 const HeadingTag = headingLevel === 1 ? 'h1' : 'h2';
 const isCentered = layout === 'centered';
 
@@ -27,7 +28,7 @@ const markdown = new Marked({
 const html = markdown.parse(body, { async: false });
 ---
 
-<section class:list={['text-block', isCentered && 'text-block--centered']}>
+<section class:list={['text-block', isCentered && 'text-block--centered', nested && 'text-block--nested']}>
   <div class="text-block__copy">
     {heading && <HeadingTag class="text-block__heading">{heading}</HeadingTag>}
     <div class="text-block__body prose" set:html={html} />
@@ -36,11 +37,23 @@ const html = markdown.parse(body, { async: false });
 
 <style>
   .text-block {
+    max-width: var(--page-max);
+    margin-inline: auto;
     padding: var(--space-5) var(--space-4);
   }
 
-  .text-block:not(.text-block--centered) .text-block__copy {
+  .text-block:not(.text-block--centered):not(.text-block--nested) .text-block__copy {
     max-width: 42rem;
+  }
+
+  .text-block--nested {
+    max-width: none;
+    margin: 0;
+    padding: 0 0 var(--space-5);
+  }
+
+  .text-block--nested:last-child {
+    padding-bottom: 0;
   }
 
   .text-block__heading {

@@ -2,6 +2,7 @@
 import { getCollection, getEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import SiteNav from '../../components/SiteNav.astro';
+import PageSplit from '../../components/PageSplit.astro';
 import { resolveSiteUrl } from '../../lib/site-url';
 import { buildBreadcrumbJsonLd } from '../../lib/schema-org';
 
@@ -37,30 +38,31 @@ const jsonLd = [
 >
   <SiteNav />
   <main class="index-page">
-    <h1>{pageTitle}</h1>
-    <p>Ralo, pia, esgoto, vaso sanitário, fossa, caixa de gordura e hidrojateamento. Todos os serviços com garantia por escrito.</p>
-    {
-      services.length > 0 ? (
-        <ul class="index-page__list">
-          {services.map((service) => (
-            <li>
-              <a class="index-card" href={`/servicos/${service.data.slug}/`}>
-                {service.data.title}
-              </a>
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <p>Nenhum serviço publicado ainda.</p>
-      )
-    }
+    <PageSplit>
+      <h1>{pageTitle}</h1>
+      <p>Ralo, pia, esgoto, vaso sanitário, fossa, caixa de gordura e hidrojateamento. Todos os serviços com garantia por escrito.</p>
+      {
+        services.length > 0 ? (
+          <ul class="index-page__list">
+            {services.map((service) => (
+              <li>
+                <a class="index-card" href={`/servicos/${service.data.slug}/`}>
+                  {service.data.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p>Nenhum serviço publicado ainda.</p>
+        )
+      }
+    </PageSplit>
   </main>
 </BaseLayout>
 
 <style>
-  .index-page {
-    padding: var(--space-5) var(--space-4);
-    max-width: 48rem;
+  .index-page :global(.page-split) {
+    padding-top: var(--space-5);
   }
 
   .index-page h1 {
@@ -79,6 +81,12 @@ const jsonLd = [
     gap: var(--space-2);
     list-style: none;
     padding: 0;
+  }
+
+  @media (min-width: 640px) {
+    .index-page__list {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
   }
 
   .index-card {

@@ -5,6 +5,7 @@ import { getCollection, getEntry, render } from 'astro:content';
 import { Image } from 'astro:assets';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import SiteNav from '../../components/SiteNav.astro';
+import PageSplit from '../../components/PageSplit.astro';
 import { resolveSiteUrl, toAbsoluteUrl } from '../../lib/site-url';
 
 export const getStaticPaths = (async () => {
@@ -85,60 +86,62 @@ const breadcrumbJsonLd = {
 >
   <SiteNav />
   <article class="article">
-    <header>
-      <h1>{entry.data.title}</h1>
-      <p class="article__meta">
-        <span>{entry.data.author}</span>
-        <time datetime={entry.data.publishedDate.toISOString()}>
-          {entry.data.publishedDate.toLocaleDateString('pt-BR', { timeZone: 'UTC' })}
-        </time>
-      </p>
-    </header>
-    <figure class="article__featured">
-      <Image
-        src={entry.data.featuredImage.src}
-        alt={entry.data.featuredImage.alt}
-        format="webp"
-        quality="mid"
-        loading="eager"
-        fetchpriority="high"
-      />
+    <PageSplit>
+      <header>
+        <h1>{entry.data.title}</h1>
+        <p class="article__meta">
+          <span>{entry.data.author}</span>
+          <time datetime={entry.data.publishedDate.toISOString()}>
+            {entry.data.publishedDate.toLocaleDateString('pt-BR', { timeZone: 'UTC' })}
+          </time>
+        </p>
+      </header>
+      <figure class="article__featured">
+        <Image
+          src={entry.data.featuredImage.src}
+          alt={entry.data.featuredImage.alt}
+          format="webp"
+          quality="mid"
+          loading="eager"
+          fetchpriority="high"
+        />
+        {
+          entry.data.featuredImage.credit ? (
+            <figcaption class="article__featured-credit">{entry.data.featuredImage.credit}</figcaption>
+          ) : null
+        }
+      </figure>
+      <div class="article__body prose">
+        <Content />
+      </div>
       {
-        entry.data.featuredImage.credit ? (
-          <figcaption class="article__featured-credit">{entry.data.featuredImage.credit}</figcaption>
+        relatedService ? (
+          <aside class="related-service" aria-labelledby="related-service-heading">
+            <h2 id="related-service-heading">Sobre este serviço</h2>
+            <a class="related-service__card" href={`/servicos/${relatedService.data.slug}/`}>
+              <span class="related-service__title">{relatedService.data.title}</span>
+              <span class="related-service__more">Ver serviço</span>
+            </a>
+          </aside>
         ) : null
       }
-    </figure>
-    <div class="article__body prose">
-      <Content />
-    </div>
-    {
-      relatedService ? (
-        <aside class="related-service" aria-labelledby="related-service-heading">
-          <h2 id="related-service-heading">Sobre este serviço</h2>
-          <a class="related-service__card" href={`/servicos/${relatedService.data.slug}/`}>
-            <span class="related-service__title">{relatedService.data.title}</span>
-            <span class="related-service__more">Ver serviço</span>
-          </a>
-        </aside>
-      ) : null
-    }
-    {
-      entry.data.tags && entry.data.tags.length > 0 && (
-        <footer>
-          <h2 class="article__tags-title">Tags</h2>
-          <ul class="article__tags">
-            {entry.data.tags.map((tag) => (
-              <li>
-                <a href="#" rel="tag">
-                  {tag}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </footer>
-      )
-    }
+      {
+        entry.data.tags && entry.data.tags.length > 0 && (
+          <footer>
+            <h2 class="article__tags-title">Tags</h2>
+            <ul class="article__tags">
+              {entry.data.tags.map((tag) => (
+                <li>
+                  <a href="#" rel="tag">
+                    {tag}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </footer>
+        )
+      }
+    </PageSplit>
   </article>
   <script type="application/ld+json" set:html={JSON.stringify(blogPostingJsonLd)} />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
@@ -146,9 +149,7 @@ const breadcrumbJsonLd = {
 
 <style>
   .article {
-    padding: var(--space-5) var(--space-4) var(--space-6);
-    max-width: 42rem;
-    margin: 0 auto;
+    padding-bottom: var(--space-6);
   }
 
   .article h1 {

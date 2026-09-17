@@ -13,8 +13,10 @@ import FaqBlock from '../components/blocks/FaqBlock.astro';
 import ServiceGrid from '../components/blocks/ServiceGrid.astro';
 import LocationGrid from '../components/blocks/LocationGrid.astro';
 import FeatureBanner from '../components/blocks/FeatureBanner.astro';
+import PageSplit from '../components/PageSplit.astro';
 import { resolveSiteUrl } from '../lib/site-url';
 import { buildBreadcrumbJsonLd } from '../lib/schema-org';
+import { groupContentBlocks } from '../lib/group-content-blocks';
 
 export const getStaticPaths = (async () => {
   const pages = await getCollection('pages');
@@ -34,6 +36,7 @@ interface Props {
 const { entry } = Astro.props;
 const isHome = entry.data.slug === 'home';
 const firstHeroIndex = entry.data.blocks.findIndex((block) => block.type === 'hero');
+const groupedBlocks = groupContentBlocks(entry.data.blocks);
 const canonicalPath = `/${entry.data.slug === 'home' ? '' : entry.data.slug}`;
 const settings = await getEntry('siteSettings', 'default');
 const siteUrl = resolveSiteUrl(settings?.data.siteUrl);
@@ -62,7 +65,27 @@ const breadcrumbJsonLd = isHome
       )
     }
     {
-      entry.data.blocks.map((block, index) => {
+      groupedBlocks.map((item) => {
+        if (item.kind === 'text-group') {
+          return (
+            <PageSplit withAside={!isHome}>
+              {item.blocks.map((block) =>
+                block.type === 'text' ? (
+                  <TextBlock
+                    nested
+                    layout={block.layout}
+                    heading={block.heading}
+                    body={block.body}
+                    headingLevel={2}
+                  />
+                ) : null,
+              )}
+            </PageSplit>
+          );
+        }
+
+        const { block, index } = item;
+
         switch (block.type) {
           case 'hero':
             return (
@@ -141,6 +164,8 @@ const breadcrumbJsonLd = isHome
 
 <style>
   .page-title {
+    max-width: var(--page-max);
+    margin-inline: auto;
     padding: var(--space-4) var(--space-4) 0;
     font-size: 0.875rem;
     font-weight: 600;

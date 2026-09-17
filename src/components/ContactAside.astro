@@ -1,0 +1,125 @@
+---
+import { getEntry } from 'astro:content';
+import { buildWhatsAppUrl } from '../lib/whatsapp';
+
+const settings = await getEntry('siteSettings', 'default');
+const organization = settings?.data.organization;
+const siteName = organization?.name?.trim() || settings?.data.siteName || 'Desentupidora Central';
+const telephone = organization?.telephone?.trim() ?? '';
+const telHref = telephone.replace(/\s/g, '');
+const whatsappHref = buildWhatsAppUrl(
+  organization?.whatsappNumber,
+  `Olá, vim pelo site ${siteName} e gostaria de um atendimento.`,
+);
+const areaServed = organization?.areaServed?.slice(0, 6) ?? [];
+---
+
+<aside class="contact-aside" aria-labelledby="contact-aside-heading">
+  <h2 id="contact-aside-heading">Atendimento 24 horas</h2>
+  <p>Desentupidora em Curitiba e região metropolitana. Chegamos em até 30 minutos, com garantia por escrito.</p>
+
+  <ul class="contact-aside__facts">
+    <li>Plantão 24h, todos os dias</li>
+    <li>Visita sem compromisso</li>
+    <li>Todos os serviços com garantia por escrito</li>
+  </ul>
+
+  {
+    telephone ? (
+      <a class="contact-aside__link" href={`tel:${telHref}`} aria-label={`Ligar para ${siteName} no telefone ${telephone}`}>
+        {telephone}
+      </a>
+    ) : null
+  }
+
+  {
+    whatsappHref ? (
+      <a
+        class="contact-aside__whatsapp"
+        href={whatsappHref}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`Chamar ${siteName} no WhatsApp`}
+      >
+        Chamar no WhatsApp
+      </a>
+    ) : null
+  }
+
+  {
+    areaServed.length > 0 ? (
+      <p class="contact-aside__areas">
+        Atendemos {areaServed.join(', ')} e demais cidades da região.
+      </p>
+    ) : null
+  }
+</aside>
+
+<style>
+  .contact-aside {
+    display: grid;
+    align-content: start;
+    gap: var(--space-3);
+    padding: var(--space-4);
+    background: color-mix(in srgb, var(--color-text) 4%, var(--color-background));
+    border: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .contact-aside h2 {
+    font-family: var(--font-secondary);
+    font-size: 1.5rem;
+    line-height: 1.2;
+    letter-spacing: var(--heading-letter-spacing);
+    color: var(--color-primary);
+  }
+
+  .contact-aside p,
+  .contact-aside li {
+    line-height: 1.55;
+    color: var(--color-secondary);
+  }
+
+  .contact-aside__facts {
+    display: grid;
+    gap: var(--space-1);
+    margin: 0;
+    padding-left: 1.15rem;
+  }
+
+  .contact-aside__link,
+  .contact-aside__whatsapp {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 2.75rem;
+    padding: 0.7rem 1rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+  }
+
+  .contact-aside__link {
+    color: var(--color-primary);
+    border: 1px solid color-mix(in srgb, var(--color-primary) 35%, transparent);
+    background: var(--color-background);
+  }
+
+  .contact-aside__whatsapp {
+    background: var(--color-accent);
+    color: #fff;
+  }
+
+  .contact-aside__link:hover,
+  .contact-aside__link:focus-visible,
+  .contact-aside__whatsapp:hover,
+  .contact-aside__whatsapp:focus-visible {
+    filter: brightness(1.06);
+  }
+
+  .contact-aside__areas {
+    font-size: 0.875rem;
+  }
+</style>

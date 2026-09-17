@@ -1,0 +1,41 @@
+---
+import ContactAside from './ContactAside.astro';
+
+interface Props {
+  withAside?: boolean;
+}
+
+const { withAside = true } = Astro.props;
+---
+
+<div class:list={['page-split', withAside && 'page-split--with-aside']}>
+  <div class="page-split__main">
+    <slot />
+  </div>
+  {withAside ? <ContactAside /> : null}
+</div>
+
+<style>
+  .page-split {
+    max-width: var(--page-max);
+    margin-inline: auto;
+    padding: var(--space-5) var(--space-4);
+  }
+
+  .page-split--with-aside {
+    display: grid;
+    gap: var(--space-5);
+  }
+
+  @media (min-width: 900px) {
+    .page-split--with-aside {
+      grid-template-columns: minmax(0, 1fr) minmax(16rem, 20rem);
+      align-items: start;
+    }
+
+    .page-split--with-aside :global(.contact-aside) {
+      position: sticky;
+      top: var(--space-4);
+    }
+  }
+</style>

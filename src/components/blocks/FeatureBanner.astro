@@ -73,7 +73,8 @@ const headingRest = headingMatch?.groups?.rest;
   .feature-banner {
     display: grid;
     gap: var(--space-4);
-    margin: var(--space-5) var(--space-4);
+    width: min(var(--page-max), calc(100% - (var(--space-4) * 2)));
+    margin: var(--space-5) auto;
     padding: var(--space-5) var(--space-4);
     align-items: center;
     background:
