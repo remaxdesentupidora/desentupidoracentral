@@ -1,6 +1,16 @@
 {
   "redirects": [
     {
+      "source": "/locais/:slug",
+      "destination": "/locais/:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/servicos/:slug",
+      "destination": "/servicos/:slug/",
+      "permanent": true
+    },
+    {
       "source": "/desentupidora-de-vaso-curitiba/",
       "destination": "/servicos/desentupimento-de-vaso-sanitario/",
       "permanent": true
@@ -1803,6 +1813,41 @@
     {
       "source": "/87541-2/",
       "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidores-de-canos-curitiba/",
+      "destination": "/servicos/desentupimento-de-ralo/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-no-parolin-curitiba",
+      "destination": "/locais/parolin/",
+      "permanent": true
+    },
+    {
+      "source": "/category/servicos/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/category/caca-vazamentos/",
+      "destination": "/blog/como-identificar-vazamento-oculto/",
+      "permanent": true
+    },
+    {
+      "source": "/category/manutencao-preventiva/",
+      "destination": "/blog/manutencao-preventiva-esgoto/",
+      "permanent": true
+    },
+    {
+      "source": "/category/manutencao-hidraulica/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/category/desentupimento-industrial/",
+      "destination": "/servicos/",
       "permanent": true
     }
   ]
